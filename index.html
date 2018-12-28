@@ -9,12 +9,30 @@ cgdsss
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+<script type="text/javascript">
+  function w()
+  {
+    screen_w = window.screen.availWidth;
+    if (screen_w > 1000)
+    {
+      return 1000;
+    }
+    else
+    {
+      return screen_w
+    }
+  }
+
+</script>
+
 </head>
 
 <body>
 <div align="center">
-<div style="width:1000px">
-
+<div id = "page_size" style="width:1000px">
+<script type="text/javascript">
+  document.getElementById("page_size").style = "width:"+w() +"px"; 
+</script>
 <div>
   <div style="width:100%; position:relative;left:0%;top:0%;float: left;" align="left">
       <p><a style="font-size: 2em; "><b>Guangda Chen</b></a>

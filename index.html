@@ -70,8 +70,10 @@ cgdsss
 </div>
 <script type="text/javascript">
   document.getElementById("page_size").style = "width:"+w() +"px"; 
-  document.getElementById("11").style = "width:100%; position:relative;left:0%;top:0%;float: left;"; 
-  document.getElementById("12").style = "width:100%; position:relative;left:0%;top:0%;float: left;"; 
+  if (w() < 1000) {
+      document.getElementById("11").style = "width:100%; position:relative;left:0%;top:0%;float: left;"; 
+      document.getElementById("12").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+  } 
 </script>
 <div>
   <div style="width:30%; position:relative;left:0%;top:0%;float: left;" align="left">

@@ -60,9 +60,9 @@ cgdsss
       </p>
   </div>
   <div style="width:30%; position:relative;left:0%;top:0%;float: left;" align="center" id = "12">
-    <img style="width: 100%" src="./pic/love.png" />
+    <img id="imglove" style="width: 100%" src="./pic/love.png" />
     <br>
-    <a style="font-family: Comic Sans MS; font-size: 1.1em;"> <I>My sally girl, My love</I></a>
+    <a id="wordlove" style="font-family: Comic Sans MS; font-size: 1.1em;"> <I>My sally girl, My love</I></a>
     <br>
     <br>
   </div>
@@ -73,6 +73,8 @@ cgdsss
   if (w() < 1000) {
       document.getElementById("11").style = "width:100%; position:relative;left:0%;top:0%;float: left;"; 
       document.getElementById("12").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+      document.getElementById("imglove").style = "";
+      document.getElementById("12").align = "left";
   } 
 </script>
 <div>

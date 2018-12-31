@@ -68,20 +68,12 @@ cgdsss
   </div>
   <hr>
 </div>
-<script type="text/javascript">
-  document.getElementById("page_size").style = "width:"+w() +"px"; 
-  if (w() < 1000) {
-      document.getElementById("11").style = "width:100%; position:relative;left:0%;top:0%;float: left;"; 
-      document.getElementById("12").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
-      document.getElementById("imglove").style = "";
-      document.getElementById("12").align = "left";
-  } 
-</script>
+
 <div>
-  <div style="width:30%; position:relative;left:0%;top:0%;float: left;" align="left">
+  <div style="width:30%; position:relative;left:0%;top:0%;float: left;" align="left" id="abouttext">
       <p style="font-size: 1.5em; ">About</p>
   </div>
-  <div style="width:70%; position:relative;left:0%;top:0%;float: left;" align="left">
+  <div style="width:70%; position:relative;left:0%;top:0%;float: left;" align="left" id="aboutword">
       <p>
       Mr. Guangda Chen is a fourth-year Ph.D. student (BA17011, advised by Prof. <a href="http://ai.ustc.edu.cn/en/people/xpchen.php" target="_blank" style="text-decoration: none;color: #0066CC">Xiaoping Chen</a>) in the <a href="http://ai.ustc.edu.cn/"style="font-size: 1.0em; text-decoration: none;color: #0066CC" target="_blank">Multi-Agent Systems Laboratory</a> at the <a href="http://cs.ustc.edu.cn/" style=" text-decoration: none;color: #0066CC" target="_blank">School of Computer Science and Technology</a>, <a href="https://www.ustc.edu.cn/" style=" text-decoration: none;color: #0066CC" target="_blank">University of Science and Technology of China (USTC)</a>. He received a bachelor's degree of management from <a href="http://www.cmu.edu.cn/" target="_blank" style="font-size: 1.0em; text-decoration: none;color: #0066CC">China Medical University</a> in 2014. His research focuses on mobile robot navigation in dynamic and crowded environments, and interests include Reinforcement Learning, Computer Vision and Calibration.
       <br>
@@ -98,10 +90,10 @@ cgdsss
 </div>
 
 <div>
-  <div style="width:30%; position:relative;left:0%;top:0%;float: left;" align="left">
+  <div style="width:30%; position:relative;left:0%;top:0%;float: left;" align="left" id="edutext">
       <p><a style="font-size: 1.5em; ">Education</a></p>
   </div>
-  <div style="width:70%; position:relative;left:0%;top:0%;float: left;" align="left">
+  <div style="width:70%; position:relative;left:0%;top:0%;float: left;" align="left" id="eduword">
       <p>
       <a href="https://www.ustc.edu.cn/" target="_blank" style="font-size: 1.05em; text-decoration: none;color: #0066CC"> University of Science and Technology of China (USTC)</a>
       <br>
@@ -131,10 +123,10 @@ cgdsss
 </div>
 
 <div>
-  <div style="width:30%; position:relative;left:0%;top:0%;float: left;" align="left">
+  <div style="width:30%; position:relative;left:0%;top:0%;float: left;" align="left" id="projecttext">
       <p style="font-size: 1.5em; ">Project</p>
   </div>
-  <div style="width:70%; position:relative;left:0%;top:0%;float: left;" align="left">
+  <div style="width:70%; position:relative;left:0%;top:0%;float: left;" align="left" id="projectword">
       <p>
       <a href="http://www.robotics-kejia.com/about.php" target="_blank" style="font-size: 1.05em; text-decoration: none;color: #0066CC"> Kejia Robot</a>
       <br>
@@ -148,10 +140,10 @@ cgdsss
 </div>
 
 <div>
-  <div style="width:30%; position:relative;left:0%;top:0%;float: left;" align="left">
+  <div style="width:30%; position:relative;left:0%;top:0%;float: left;" align="left" id="pubtext">
       <p><a style="font-size: 1.5em; ">Publication</a></p>
   </div>
-  <div style="width:70%; position:relative;left:0%;top:0%;float: left;" align="left">
+  <div style="width:70%; position:relative;left:0%;top:0%;float: left;" align="left" id="pubword">
       <p>
         <a href="https://ieeexplore.ieee.org/document/8588983" target="_blank" style="font-size: 1.05em; text-decoration: none;color: #0066CC">Accurate Intrinsic and Extrinsic Calibration of RGB-D Cameras with GP-based Depth Correction</a>
         <br>
@@ -185,6 +177,24 @@ cgdsss
   </div>
   <hr>
 </div>
+
+<script type="text/javascript">
+  document.getElementById("page_size").style = "width:"+w() +"px"; 
+  if (w() < 1000) {
+      document.getElementById("11").style = "width:100%; position:relative;left:0%;top:0%;float: left;"; 
+      document.getElementById("12").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+      document.getElementById("imglove").style = "";
+      document.getElementById("12").align = "left";
+      document.getElementById("abouttext").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+      document.getElementById("aboutword").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+      document.getElementById("edutext").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+      document.getElementById("eduword").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+      document.getElementById("projecttext").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+      document.getElementById("projectword").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+      document.getElementById("pubtext").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+      document.getElementById("pubword").style = "width:100%; position:relative;left:0%;top:0%;float: left;";
+  } 
+</script>
 
 </div>
 </div>

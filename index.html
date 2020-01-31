@@ -133,7 +133,8 @@ text-decoration: underline;color: blue;
 
 <div id="about">
   <div class="width30 leftfloat" align="left" id="abouttext">
-      <p class="fontbig">About</p>
+      <br>
+      <a class="fontbig">About</a>
   </div>
   <div class="width70 leftfloat" align="left" id="aboutword">
       <p>
@@ -317,6 +318,9 @@ text-decoration: underline;color: blue;
       document.getElementById("pubword").className = maxline;
       document.getElementById("Servicetext").className = maxline;
       document.getElementById("Serviceword").className = maxline;
+
+      var e = document.getElementById("abouttext");
+      e.innerHTML = e.innerHTML.replace('<br>', '');
   }
 </script>
 </div>

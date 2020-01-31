@@ -91,11 +91,13 @@ text-decoration: underline;color: blue;
 <div class="divpad">
 <div>
   <div class="maxwidth leftfloat" align="left">
-          <p><a class="fontverybig blacklink" href="https://cgdsss.github.io/"><b>Guangda Chen</b></a>
+    <p>
+      <a class="fontverybig blacklink" href="https://cgdsss.github.io/"><b>Guangda Chen</b></a>
       <a itemprop="sameAs" content="https://orcid.org/0000-0003-1888-9947" href="https://orcid.org/0000-0003-1888-9947" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
-            <br>
       <br>
-      <br>
+      <div id = "title_br">
+        <br>
+      </div>
     </p>
   </div>
 </div>
@@ -167,7 +169,8 @@ text-decoration: underline;color: blue;
 
 <div id="edu">
   <div class="width30 leftfloat" align="left" id="edutext">
-      <p><a class="fontbig">Education</a></p>
+      <br>
+      <a class="fontbig">Education</a>
   </div>
   <div class="width70 leftfloat" align="left" id="eduword">
       <p>
@@ -195,7 +198,8 @@ text-decoration: underline;color: blue;
 
 <div id="project">
   <div class="width30 leftfloat" align="left" id="projecttext">
-      <p class="fontbig">Project</p>
+    <br>
+    <a class="fontbig">Project</a>
   </div>
   <div class="width70 leftfloat" align="left" id="projectword">
       <p>
@@ -222,9 +226,8 @@ text-decoration: underline;color: blue;
 
 <div id="pubs">
   <div class="width30 leftfloat" align="left" id="pubtext">
-    <p>
-      <a class="fontbig blacklink">Publication</a>  
-    </p>
+    <br>
+    <a class="fontbig blacklink">Publication</a>
   </div>
   <div class="width70 leftfloat" align="left" id="pubword">
     <p>
@@ -276,11 +279,11 @@ text-decoration: underline;color: blue;
 </div>
 <div id="service">
   <div class="width30 leftfloat" align="left" id="Servicetext">
-      <p class="fontbig">Service</p>
+    <br>
+    <a class="fontbig">Service</a>
   </div>
   <div class="width70 leftfloat" align="left" id="Serviceword">
       <p>
-      <br>
       Reviewer : 
       <a href="https://www.iros2019.org/" target="_blank" class="fontnorm bluelink"> IROS2019</a>, 
       <a href="http://www.icmeie.com/Default.aspx" target="_blank" class="fontnorm bluelink"> MEIE2019,2020</a>, 
@@ -320,6 +323,16 @@ text-decoration: underline;color: blue;
       document.getElementById("Serviceword").className = maxline;
 
       var e = document.getElementById("abouttext");
+      e.innerHTML = e.innerHTML.replace('<br>', '');
+      e = document.getElementById("title_br");
+      e.innerHTML = e.innerHTML.replace('<br>', '');
+      var e = document.getElementById("edutext");
+      e.innerHTML = e.innerHTML.replace('<br>', '');
+      var e = document.getElementById("projecttext");
+      e.innerHTML = e.innerHTML.replace('<br>', '');
+      var e = document.getElementById("pubtext");
+      e.innerHTML = e.innerHTML.replace('<br>', '');
+      var e = document.getElementById("Servicetext");
       e.innerHTML = e.innerHTML.replace('<br>', '');
   }
 </script>

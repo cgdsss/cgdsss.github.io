@@ -1,0 +1,55 @@
+.divpad{
+    padding:0 10px 0 10px;
+ }
+ .backgrounddiv
+ {
+   background-color:rgba(243, 239, 233, 0.87)
+ }
+ .fontgrounddiv
+ {
+   background-color:rgb(255, 255, 255)
+ }
+ .leftfloat{
+   position:relative;left:0%;top:0%;float: left;
+ }
+ .maxwidth{
+   width:100%;
+ }
+ .width70{
+   width:70%;
+ }
+ .width30{
+   width:30%;
+ }
+ .bluelink{
+   text-decoration: none;color: #0066CC
+ }
+ .blacklink{
+   text-decoration: none;color: #000000
+ }
+ .bluelink:hover{
+ text-decoration: underline;color: blue;
+ }
+ .fontverybig{
+   font-size: 2em;
+ }
+ .fontbig{
+   font-size: 1.5em;
+ }
+ .fontlarge{
+   font-size: 1.15em;
+ }
+ .fontnorm{
+   font-size: 1.05em;
+ }
+ .fontsmall{
+   font-size: 0.95em;
+ }
+ 
+ #icon{
+     background:none;
+ }
+ 
+ #icon:hover{
+     background:#0000ff;
+ }

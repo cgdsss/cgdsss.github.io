@@ -16,10 +16,16 @@
    width:100%;
  }
  .width70{
-   width:70%;
+    width:70%;
+  }
+  .width30{
+    width:30%;
+  }
+ .width75{
+   width:80%;
  }
- .width30{
-   width:30%;
+ .width25{
+   width:20%;
  }
  .bluelink{
    text-decoration: none;color: #0066CC
@@ -53,3 +59,5 @@
  #icon:hover{
      background:#0000ff;
  }
+ul.circle {list-style-type:circle}
+ul.square {list-style-type:square}

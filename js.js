@@ -1,4 +1,4 @@
-function w()
+function get_width()
 {
   screen_w = window.screen.availWidth;
   if (screen_w > 1000)
@@ -11,33 +11,33 @@ function w()
   }
 }
 document.getElementById("page_size").style = "width:"+w() +"px";
-if (w() < 1000) {
+if (get_width() < 1000) {
     maxline = "maxwidth leftfloat";
-    document.getElementById("11").className = maxline;
-    document.getElementById("12").className = maxline;
+    document.getElementById("title_div_left").className = maxline;
+    document.getElementById("title_div_right").className = maxline;
     document.getElementById("imglove").style = "";
-    document.getElementById("12").align = "left";
-    document.getElementById("abouttext").className = maxline;
-    document.getElementById("aboutword").className = maxline;
-    document.getElementById("edutext").className = maxline;
-    document.getElementById("eduword").className = maxline;
-    document.getElementById("projecttext").className = maxline;
+    document.getElementById("title_div_right").align = "left";
+    document.getElementById("about_title").className = maxline;
+    document.getElementById("about_content").className = maxline;
+    document.getElementById("edu_title").className = maxline;
+    document.getElementById("edu_content").className = maxline;
+    document.getElementById("project_title").className = maxline;
     document.getElementById("projectword").className = maxline;
-    document.getElementById("pubtext").className = maxline;
-    document.getElementById("pubword").className = maxline;
-    document.getElementById("Servicetext").className = maxline;
-    document.getElementById("Serviceword").className = maxline;
+    document.getElementById("pub_title").className = maxline;
+    document.getElementById("pub_content").className = maxline;
+    document.getElementById("service_title").className = maxline;
+    document.getElementById("service_content").className = maxline;
 
-    var e = document.getElementById("abouttext");
+    var e = document.getElementById("about_title");
     e.innerHTML = e.innerHTML.replace('<br>', '');
     e = document.getElementById("title_br");
     e.innerHTML = e.innerHTML.replace('<br>', '');
-    var e = document.getElementById("edutext");
+    var e = document.getElementById("edu_title");
     e.innerHTML = e.innerHTML.replace('<br>', '');
-    var e = document.getElementById("projecttext");
+    var e = document.getElementById("project_title");
     e.innerHTML = e.innerHTML.replace('<br>', '');
-    var e = document.getElementById("pubtext");
+    var e = document.getElementById("pub_title");
     e.innerHTML = e.innerHTML.replace('<br>', '');
-    var e = document.getElementById("Servicetext");
+    var e = document.getElementById("service_title");
     e.innerHTML = e.innerHTML.replace('<br>', '');
 }

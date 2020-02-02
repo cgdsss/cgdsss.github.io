@@ -22,10 +22,10 @@
     width:30%;
   }
  .width75{
-   width:80%;
+   width:78%;
  }
  .width25{
-   width:20%;
+   width:22%;
  }
  .bluelink{
    text-decoration: none;color: #0066CC
@@ -59,3 +59,7 @@
  #icon:hover{
      background:#0000ff;
  }
+ body
+{
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

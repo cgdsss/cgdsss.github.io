@@ -84,7 +84,7 @@
 }
 .bibtexdiv{
   font-size:14px;color:black; background-color: #EAEAE8; border: 1 solid #1892B5; padding: 1;
-  padding:2px 5px 5px 5px;
+  padding:2px 5px 5px 5px; text-align:justify;text-justify:inter-ideograph;word-break:normal
 }
 </style>
 <link rel="shortcut icon" href="./pic/ustc.ico">
@@ -286,6 +286,8 @@
       <I><a href="http://www.icnsc2020.org/" target="_blank" class="bluelink">17th IEEE International Conference on Networking, Sensing and Control(ICNSC 2020)</a>.</I> 
       <br><a id="main1" class="bluelink" onclick="document.all.child2.style.display=(document.all.child2.style.display =='none')?'':'none'" >
         [BibTeX]</a>, 
+      <a class="bluelink" onclick="document.all.abs1.style.display=(document.all.abs1.style.display =='none')?'':'none'" >
+          [Abstract]</a>, 
       <a href="pdf/2002.04349.pdf" target="_blank" class="bluelink">[PDF]</a>, <a href="https://arxiv.org/abs/2002.04349" target="_blank" class="bluelink">[arXiv]</a>, <a href="https://youtu.be/Eq4AjsFH_cU" target="_blank" class="bluelink">[Demo]</a>
       <br>
       <div id="child2" style="display:none" class="bibtexdiv">
@@ -295,6 +297,20 @@
           journal={arXiv preprint arXiv:2002.04349},<br>
           year={2020}<br>
         }
+      </div> 
+      <div id="abs1" style="display:none" class="bibtexdiv">
+        &emsp;This paper proposes an end-to-end deep reinforcement learning approach for mobile robot navigation with
+        dynamic obstacles avoidance. Using experience collected in a
+        simulation environment, a convolutional neural network (CNN)
+        is trained to predict proper steering actions of a robot from its
+        egocentric local occupancy maps, which accommodate various
+        sensors and fusion algorithms. The trained neural network is
+        then transferred and executed on a real-world mobile robot to
+        guide its local path planning. The new approach is evaluated
+        both qualitatively and quantitatively in simulation and realworld robot experiments. The results show that the map-based
+        end-to-end navigation model is easy to be deployed to a robotic
+        platform, robust to sensor noise and outperforms other existing
+        DRL-based models in many indicators.
       </div> 
       <br>
     </div>
@@ -309,7 +325,10 @@
       <I><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361" target="_blank" class="bluelink">IEEE Sensors Journal</a> ( Volume: 19 , <a href="https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=8662729" target="_blank" class="bluelink">Issue: 7</a> , April, 1 2019 ).</I> 
       <br>
       <a id="main1" class="bluelink" onclick="document.all.child1.style.display=(document.all.child1.style.display =='none')?'':'none'" >
-        [BibTeX]</a>, <a href="pdf/rgbd_cal_j.pdf" target="_blank" class="bluelink">[PDF]</a>
+        [BibTeX]</a>, 
+        <a class="bluelink" onclick="document.all.abs2.style.display=(document.all.abs2.style.display =='none')?'':'none'" >
+          [Abstract]</a>, 
+        <a href="pdf/rgbd_cal_j.pdf" target="_blank" class="bluelink">[PDF]</a>
         <div id="child1" style="display:none" class="bibtexdiv">
           @article{chen2019accurate,<br>
             title = {Accurate Intrinsic and Extrinsic Calibration of {RGB}-D Cameras With {GP}-Based Depth Correction},<br>
@@ -324,6 +343,32 @@
             doi = {10.1109/jsen.2018.2889805},<br>
             url = {https://doi.org/10.1109%2Fjsen.2018.2889805}<br>
           } 
+        </div> 
+        <div id="abs2" style="display:none" class="bibtexdiv">
+          &emsp;In recent years, more and more robots have been
+          equipped with low-cost RGB-D sensors, such as Microsoft Kinect
+          and Intel Realsense, for safe navigation and active interaction
+          with objects and people. In order to obtain more accurate
+          and reliable fused color and depth information (coloured point
+          clouds), not only the intrinsic and extrinsic parameters of color
+          and depth sensor should be precisely calibrated, but also the
+          external corrections of depth measurements are required. In
+          this paper, using motion capture system, we propose a reliable
+          calibration framework that enables the precise estimation of the
+          intrinsic and extrinsic parameters of RGB-D sensors and provide
+          a model-free depth calibration method based on heteroscedastic
+          Gaussian Processes. Compared with the existing depth correction
+          techniques, our method can simultaneously estimate the mean
+          and variance of the depth error at different measurement
+          distances, i.e., the probability distribution of the depth error
+          relative to the measured distance, which is essential in the state
+          estimation problems. To verify the effectiveness of our approach,
+          we conduct a thorough qualitative and quantitative analysis of
+          the major steps of our calibration method, and compare our
+          experimental results with other related work. Furthermore, we
+          demonstrate an experiment about the overall improvement of
+          visual SLAM with a Kinect device calibrated by our calibration
+          technique.
         </div> 
       <br>
       <br>

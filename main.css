@@ -1,77 +1,89 @@
-.divpad{
-    padding:0 10px 0 10px;
- }
- .backgrounddiv
- {
-   background-color:rgba(243, 239, 233, 0.87)
- }
- .fontgrounddiv
- {
-   background-color:rgb(255, 255, 255)
- }
- .leftfloat{
-   position:relative;left:0%;top:0%;right:0%;float: left;
- }
- .rightfloat{
-  position:relative;left:0%;top:0%;float: right;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
 }
- .maxwidth{
-   width:100%;
- }
- .width70{
-    width:70%;
-  }
-  .width30{
-    width:30%;
-  }
- .width75{
-   width:78%;
- }
- .width25{
-   width:22%;
- }
- .width96{
-  padding-left:25px;
-  padding-right:-25px;
-  position: relative;
-  z-index: 1;
+.divpad{
+  padding:0 10px 0 10px;
+}
+.backgrounddiv
+{
+ background-color:rgba(243, 239, 233, 0.87)
+}
+.fontgrounddiv
+{
+ background-color:rgb(255, 255, 255)
+}
+.leftfloat{
+ position:relative;left:0%;top:0%;right:0%;float: left;
+}
+.rightfloat{
+position:relative;left:0%;top:0%;float: right;
+}
+.maxwidth{
+ width:100%;
+}
+.width70{
+  width:70%;
+}
+.width30{
+  width:30%;
+  height: 240px;
+}
+.width75{
+ width:78%;
+}
+.width25{
+ width:22%;
+}
+.width96{
+padding-left:25px;
+padding-right:-25px;
+position: relative;
+z-index: 1;
 }
 .width4{
-  width:25px;
-  z-index: 2;
+width:25px;
+z-index: 2;
 }
- .bluelink{
-   text-decoration: none;color: #0066CC
- }
- .blacklink{
-   text-decoration: none;color: #000000
- }
- .bluelink:hover{
- text-decoration: underline;color: blue;
- }
- .fontverybig{
-   font-size: 2em;
- }
- .fontbig{
-   font-size: 1.5em;
- }
- .fontlarge{
-   font-size: 1.15em;
- }
- .fontnorm{
-   font-size: 1.05em;
- }
- .fontsmall{
-   font-size: 0.95em;
- }
- 
- #icon{
-     background:none;
- }
- 
- #icon:hover{
-     background:#0000ff;
- }
+.bluelink{
+ text-decoration: none;color: #0066CC
+}
+.blacklink{
+ text-decoration: none;color: #000000
+}
+.bluelink:hover{
+text-decoration: underline;color: blue;
+}
+.fontverybig{
+ font-size: 2em;
+}
+.fontbig{
+ font-size: 1.5em;
+}
+.fontlarge{
+ font-size: 1.15em;
+}
+.fontnorm{
+ font-size: 1.05em;
+}
+.fontsmall{
+ font-size: 0.95em;
+}
+#icon{
+   background:none;
+}
+#icon:hover{
+   background:#0000ff;
+}
 .linebigheight{
-  line-height: 1.4;
+line-height: 1.4;
+}
+.bibtexdiv{
+font-size:14px;color:black; background-color: #EAEAE8; border: 1 solid #1892B5; padding: 1;
+padding:2px 5px 5px 5px; text-align:justify;text-justify:inter-ideograph;word-break:normal
 }

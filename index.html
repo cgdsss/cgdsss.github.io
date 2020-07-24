@@ -11,6 +11,7 @@
 <link rel="shortcut icon" href="./pic/ustc.ico">
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="top">Back to Top</button>
 <div align="center" class="backgrounddiv">
 <div id = "page_size" style="width:1000px" >
 <div class="divpad fontgrounddiv">
@@ -411,6 +412,24 @@
   </div>
 </div>
 <!-- <script type="text/javascript" src="./main.js"></script> -->
+<script>
+  // 当网页向下滑动 20px 出现"返回顶部" 按钮
+  window.onscroll = function() {scrollFunction()};
+   
+  function scrollFunction() {console.log(121);
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+  }
+   
+  // 点击按钮，返回顶部
+  function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+  </script>
 <script type="text/javascript">
 function get_width()
 {

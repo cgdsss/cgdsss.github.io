@@ -111,7 +111,7 @@ padding:2px 5px 5px 5px; text-align:justify;text-justify:inter-ideograph;word-br
   width: 80px;
   height: 80px;
   background-image: url("pic/top1.ico");
-  background-color: white;
+  /* background-color: white; */
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -120,5 +120,5 @@ padding:2px 5px 5px 5px; text-align:justify;text-justify:inter-ideograph;word-br
 
 #myBtn:hover {
   background-image: url("pic/top2.ico");
-  background-color: white;
+  /* background-color: white; */
 }

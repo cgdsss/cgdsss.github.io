@@ -108,8 +108,8 @@ padding:2px 5px 5px 5px; text-align:justify;text-justify:inter-ideograph;word-br
   z-index: 99;
   border: none;
   outline: none;
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   background-image: url("pic/top1.ico");
   /* background-color: white; */
   color: white;

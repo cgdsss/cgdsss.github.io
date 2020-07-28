@@ -85,7 +85,8 @@ text-decoration: underline;color: blue;
    background:none;
 }
 #icon:hover{
-   background:#0000ff;
+  -webkit-filter: contrast(200%); /* Chrome, Safari, Opera */
+  filter: contrast(200%);
 }
 .linebigheight{
 line-height: 1.4;
@@ -126,6 +127,7 @@ padding:2px 5px 5px 5px; text-align:justify;text-justify:inter-ideograph;word-br
 }
 
 #myBtn:hover {
-  background-image: url("pic/top2.ico");
+  -webkit-filter: contrast(200%); /* Chrome, Safari, Opera */
+  filter: contrast(200%);
   /* background-color: white; */
 }

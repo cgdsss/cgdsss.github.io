@@ -18,6 +18,13 @@ body {
 {
  background-color:rgb(255, 255, 255)
 }
+.shadow
+{
+ background-color:rgb(255, 255, 255)
+ -webkit-box-shadow:0 0 10px #0CC;  
+ -moz-box-shadow:0 0 10px #0CC;  
+ box-shadow:0 0 10px #0CC; 
+}
 .leftfloat{
  position:relative;left:0%;top:0%;right:0%;float: left;
 }

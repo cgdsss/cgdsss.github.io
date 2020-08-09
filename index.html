@@ -18,7 +18,7 @@
 <div>
   <div class="maxwidth leftfloat" align="left">
     <p>
-      <a class="fontverybig blacklink" href="https://cgdsss.github.io/"><b>Guangda Chen</b></a>
+      <a class="fontverybig blacklink" href="/"><b>Guangda Chen</b></a>
       <a itemprop="sameAs" content="https://orcid.org/0000-0003-1888-9947" href="https://orcid.org/0000-0003-1888-9947" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
       <!-- <br> -->
       <!-- <div id = "title_br"><br></div> -->
@@ -46,10 +46,11 @@
     </p>
   </div>
   <div class="width30 leftfloat" align="center" id = "title_div_right">
-    <a href="./day.html" id="icon" ><img id="imglove" style="width: 100%" src="./pic/cgd.jpg" /></a>
-    <br>
+    <a href="./day.html" id="icon" ><img id="imglove" style="width: 100%" src="./pic/me.jpg" /></a>
     <!-- <a id="wordlove" style="font-family: Comic Sans MS; font-size: 1.1em;"> <I>My sally girl, My love</I></a> -->
-    <br><br>
+  <div id="img_br">
+    <br><br><br>
+  </div>
   </div>
   <hr color=#987cb9 SIZE=2 />
 </div>
@@ -449,7 +450,7 @@ if (get_width() < 1000) {
   maxline = "maxwidth leftfloat";
   document.getElementById("title_div_left").className = maxline;
   document.getElementById("title_div_right").className = maxline;
-  document.getElementById("imglove").style = "";
+  // document.getElementById("imglove").style = "";
   document.getElementById("title_div_right").align = "left";
   document.getElementById("about_title").className = maxline;
   document.getElementById("about_content").className = maxline;
@@ -461,11 +462,13 @@ if (get_width() < 1000) {
   document.getElementById("pub_content").className = maxline;
   document.getElementById("service_title").className = maxline;
   document.getElementById("service_content").className = maxline;
-
+  
   var e = document.getElementById("about_title");
   e.innerHTML = e.innerHTML.replace('<br>', '');
   // e = document.getElementById("title_br");
   // e.innerHTML = e.innerHTML.replace('<br>', '');
+  var e = document.getElementById("img_br");
+  e.innerHTML = e.innerHTML.replace('<br><br><br>', '');
   var e = document.getElementById("edu_title");
   e.innerHTML = e.innerHTML.replace('<br>', '');
   var e = document.getElementById("project_title");

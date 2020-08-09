@@ -33,6 +33,7 @@ position:relative;left:0%;top:0%;float: right;
 }
 .maxwidth{
  width:100%;
+ height:auto;
 }
 .width70{
   width:70%;

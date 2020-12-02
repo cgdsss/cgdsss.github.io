@@ -10,13 +10,15 @@
 </style> -->
 <link rel="shortcut icon" href="./pic/ustc.ico">
 <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>  
-<script type="text/javascript">    
+<script type="text/javascript"> 
+alert("IP：" + returnCitySN["cid"]);   
 if(returnCitySN["cid"]!="88")
 {
   window.location.href="https://cgdsss.gitee.io/cgd"; 
   }
-  if(returnCitySN["cid"]=="88")
+  else
 {
+  window.print("github");
   window.location.href="https://cgdsss.github.io/"; 
   }
 </script>

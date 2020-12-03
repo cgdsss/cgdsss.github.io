@@ -18,10 +18,7 @@
   
   request.onreadystatechange = function () {
     if (this.readyState === 4) {
-      if (this.responseText.search("China") == -1){
-        window.location.href="https://cgdsss.github.io/";
-      }
-      else{
+      if (this.responseText.search("China") != -1){
         window.location.href="https://cgdsss.gitee.io/cgd";
       }
     }

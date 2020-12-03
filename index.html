@@ -12,13 +12,25 @@
 </head>
 <body>
   <script>
-    $.get("https://api.ipdata.co?api-key=test", function (response) {
-      alert(response.country_code);
-  }, "jsonp");
+    var request = new XMLHttpRequest();
+    
+    request.open('GET', 'https://api.ipdata.co/?api-key=e70fe0136eacb22381b6d701d5dc0425ada89dff7d9a9754db77042b');
+    
+    request.setRequestHeader('Accept', 'application/json');
+    
+    request.onreadystatechange = function () {
+      if (this.readyState === 4) {
+        if (this.responseText.search("China") == -1){
+          window.location.href="https://cgdsss.github.io/";
+        }
+        else{
+          window.location.href="https://cgdsss.gitee.io/cgd";
+        }
+      }
+    };
+    
+    request.send();
   </script>
-<!-- <script type="text/javascript"> 
-  window.location.href="https://cgdsss.gitee.io/cgd"; 
-</script> -->
 <button onclick="topFunction()" id="myBtn" title="top"></button>
 <div align="center" class="backgrounddiv">
 <div id = "page_size" style="width:1000px" >

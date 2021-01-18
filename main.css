@@ -82,6 +82,9 @@ text-decoration: underline;color: blue;
 .fontsmall{
  font-size: 0.95em;
 }
+.fontverysmall{
+  font-size: 0.9em;
+ }
 .award{
   color:#CCCC00
 }

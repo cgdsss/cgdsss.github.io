@@ -138,3 +138,49 @@ padding:2px 5px 5px 5px; text-align:justify;text-justify:inter-ideograph;word-br
   filter: contrast(200%);
   /* background-color: white; */
 }
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-size: 90%;
+	margin-bottom: 1em;
+}
+
+table.noborders {
+	border: none;
+}
+
+table.noborders td {
+	border: none;
+}
+
+.vtable {
+	float: right;
+	clear: both;
+}
+
+table.tags td {
+	vertical-align: top;
+}
+
+td {
+	background-color: white;
+}
+
+th {
+	background-color: #ddf;
+}
+
+th a {
+	text-decoration: none;
+}
+
+tr:hover {
+	background-color: #ddf;
+}
+
+td {
+	border: 1px solid black;
+	padding: 0.2em;
+	padding-left: 0.3em;
+	padding-right: 0.2em;
+}

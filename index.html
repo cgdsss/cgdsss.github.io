@@ -9,7 +9,7 @@
 <!-- <style type="text/css">
 </style> -->
 <link rel="shortcut icon" href="./pic/ustc.ico">
-<script>
+<!-- <script>
   var request = new XMLHttpRequest();
   
   request.open('GET', 'https://api.ipdata.co/?api-key=e70fe0136eacb22381b6d701d5dc0425ada89dff7d9a9754db77042b');
@@ -25,7 +25,7 @@
   };
   
   request.send();
-</script>
+</script> -->
 </head>
 <body>
   <button onclick="topFunction()" id="myBtn" title="top"></button>
@@ -47,7 +47,7 @@
       <p>
         <a><b>Address : </b></a>
         <br>
-        Netease, Wangshang Road 559, Binjiang District, Hangzhou, China.<a href="https://surl.amap.com/4UBl0e3R0hD" id="icon" ><img src="./pic/gmap.ico" /></a>
+        Netease, Wangshang Road 559, Binjiang District, Hangzhou, China.<a href="https://www.amap.com/place/B023B19NAW" id="icon" ><img src="./pic/gmap.ico" /></a>
         <br><br>
         <a><b>Email: </b></a>
         <br>
@@ -160,11 +160,11 @@
       <p>
         <a  class="fontnorm bluelink pub-venue"> <b>DRL-based Navigation</b></a> <br> 
         <a class="pub-authors">Group Leader </a><br>
-        - <a href="#ref1" class="bluelink"> DQN-based Obstacle Avoidance [ref.6]</a>, <a href="https://youtu.be/Eq4AjsFH_cU"  class="bluelink">[Demo]</a>
+        - <a href="#ref1" class="bluelink"> DQN-based Obstacle Avoidance [ref.7]</a>, <a href="https://youtu.be/Eq4AjsFH_cU"  class="bluelink">[Demo]</a>
         <br>
-        - <a href="#ref6" class="bluelink"> DRQN-based 3D Obstacle Avoidance [ref.5]</a>, <a href="https://youtu.be/cnCid0qOZg4"  class="bluelink">[Demo]</a>
+        - <a href="#ref6" class="bluelink"> DRQN-based 3D Obstacle Avoidance [ref.6]</a>, <a href="https://youtu.be/cnCid0qOZg4"  class="bluelink">[Demo]</a>
         <br>
-        - <a href="#ref0" class="bluelink"> Multi-Robot Collision Avoidance [ref.3, 4]</a>, <a href="https://youtu.be/KOb1q23L7-U"  class="bluelink">[Demo]</a>
+        - <a href="#ref0" class="bluelink"> Multi-Robot Collision Avoidance [ref.4, 5]</a>, <a href="https://youtu.be/KOb1q23L7-U"  class="bluelink">[Demo]</a>
         <br>
         - <a href="#ref7" class="bluelink">Crowd Navigation [ref.2]</a>, <a href="https://www.bilibili.com/video/BV1Vb4y1D7R6"  class="bluelink">[Demo]</a>, <a href="gitstats/authors.html" class="bluelink" target="_blank"> [Code statistics] </a>
         <br>
@@ -230,7 +230,7 @@
         <br>
         - <a href="http://staff.ustc.edu.cn/~wufeng02/doc/pdf/ZCWicira17.pdf"  class="bluelink">General Batch-Calibration Framework</a>
         <br>
-        - <a href="#ref2" class="bluelink">RGB-D Cameras Calibration [ref.7]</a>
+        - <a href="#ref2" class="bluelink">RGB-D Cameras Calibration [ref.8]</a>
         <br>
         for Training:
         <br>
@@ -312,9 +312,48 @@
         </div> 
         <br>
       </div>
-  
+
+
       <div class="width4 leftfloat" align="left">
         [3]
+      </div>
+      <div class="width96 linebigheight" align="left" id="refx1">
+        <a href="pdf/SMC21_0324_MS.pdf"  class="fontnorm bluelink">Distributed Reinforcement Learning with Self-Play in Parameterized 
+          Action Space</a>
+        <br>
+        <a class="pub-authors">Jun Ma, Shunyi Yao, <b>Guangda Chen</b>, Jiakai Song, and Jianmin Ji.</a>
+        <br>
+        <I><a href="http://ieeesmc2021.org/"  class="bluelink pub-venue">SMC 2021</a></I>, Accepted
+        <br>
+        <a class="bluelink" onclick="document.all.absx1.style.display=(document.all.absx1.style.display =='none')?'':'none'" >
+            [Abstract]</a>, 
+        <a href="https://youtu.be/BuL_li1vND4"  class="bluelink">[Demo]</a>, 
+        <a href="pdf/SMC21_0324_MS.pdf"  class="bluelink">[PDF]</a>
+        <br>
+        <div id="absx1" style="display:none" class="bibtexdiv">
+          <b>Abstract:</b> Self-play has been shown to be effective to provide
+          a proper training curriculum for a reinforcement learning
+          agent in competitive multi-agent environments without direct
+          supervision. However, its performance is still unstable for
+          problems with sparse rewards, e.g., the scoring task with
+          goalkeeper for robots in RoboCup soccer. It is challenging to
+          solve these tasks in reinforcement learning, especially for those
+          that require combining high-level actions with flexible control.
+          To address these challenges, we introduce a distributed self-play
+          training framework for an extended proximal policy optimization (PPO) algorithm that learns to act in parameterized action
+          space and plays against a group of opponents, i.e., a league.
+          Experiments on the domain of simulated RoboCup soccer show
+          that, the approach is effective and learns more robust policies
+          against various opponents compared to existing reinforcement
+          learning methods. A demonstration video is available online at
+          https://youtu.be/BuL_li1vND4.
+        </div> 
+        <br>
+      </div>
+
+  
+      <div class="width4 leftfloat" align="left">
+        [4]
       </div>
       <div class="width96 linebigheight" align="left" id="ref0">
         <a href="https://www.mdpi.com/1424-8220/20/17/4836"  class="fontnorm bluelink">Distributed Non-Communicating Multi-Robot Collision 
@@ -369,14 +408,14 @@
         <br>
       </div>
       <div class="width4 leftfloat" align="left">
-        [4]
+        [5]
       </div>
       <div class="width96 linebigheight" align="left" id="ref4">
         <a href="https://ieeexplore.ieee.org/abstract/document/9288300/"  class="fontnorm bluelink">Multi-Robot Collision Avoidance with Map-Based Deep Reinforcement Learning</a>
         <br>
         <a class="pub-authors">Shunyi Yao∗, <b>Guangda Chen∗</b>, Lifan Pan, Jun Ma, <a href="http://staff.ustc.edu.cn/~jianmin/"  class="bluelink">Jianmin Ji</a> and Xiaoping Chen. </a>
         <br>
-        <I><a href="https://ictai2020.org/index.html"  class="bluelink pub-venue">ICTAI 2020</a></I>, [CCF C]
+        <I><a href="https://ictai2020.org/index.html"  class="bluelink pub-venue">ICTAI 2020</a></I>
         <br><a id="main1" class="bluelink" onclick="document.all.child4.style.display=(document.all.child4.style.display =='none')?'':'none'" >
           [BibTeX]</a>, 
         <a class="bluelink" onclick="document.all.abs4.style.display=(document.all.abs4.style.display =='none')?'':'none'" >
@@ -425,7 +464,7 @@
       </div>
   
       <div class="width4 leftfloat" align="left">
-        [5]
+        [6]
       </div>
       <div class="width96 linebigheight" align="left" id="ref6">
         <a href=""  class="fontnorm bluelink">DRQN-based 3D Obstacle Avoidance with a Limited Field of View</a>
@@ -461,7 +500,7 @@
   
   
       <div class="width4 leftfloat" align="left">
-        [6]
+        [7]
       </div>
       <div class="width96 linebigheight" align="left" id="ref1">
         <a href="https://ieeexplore.ieee.org/document/9238090"  class="fontnorm bluelink">Robot Navigation with Map-Based Deep Reinforcement Learning</a>
@@ -505,7 +544,7 @@
         <br>
       </div>
       <div class="width4 leftfloat" align="left">
-        [7]
+        [8]
       </div>
       <div class="width96 linebigheight" align="left" id="ref2">
         <a href="https://ieeexplore.ieee.org/document/8588983"  class="fontnorm bluelink">Accurate Intrinsic and Extrinsic Calibration of RGB-D Cameras with GP-based Depth Correction</a>
@@ -568,7 +607,7 @@
       </div>
   
       <div class="width4 leftfloat" align="left">
-        [8]
+        [9]
       </div>
       <div class="width96 linebigheight" align="left" id="ref1">
         <a href="pdf/一种分布式多机器人的导航方法.pdf"  class="fontnorm bluelink">一种分布式多机器人的导航方法</a>[P]

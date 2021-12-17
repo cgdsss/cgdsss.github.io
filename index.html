@@ -5,7 +5,7 @@
 <title>cgdsss</title>
 <link rel="shortcut icon" href="favicon.png"/>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" type="text/css" href="./main.css">
+<link rel="stylesheet" type="text/css" href="main.css" id="css">
 <!-- <style type="text/css">
 </style> -->
 <link rel="shortcut icon" href="./pic/ustc.ico">
@@ -19,12 +19,29 @@
   request.onreadystatechange = function () {
     if (this.readyState === 4) {
       if (this.responseText.search("China") != -1){
-        window.location.href="https://cgdsss.gitee.io/cgd";
+        window.location.href="https://gitee.com/cgdsss/cgd";
       }
     }
   };
   
   request.send();
+</script>
+<script>
+  function validataOS(){
+if(navigator.userAgent.indexOf("Window")>0){
+return "Windows";
+}else if(navigator.userAgent.indexOf("Mac OS X")>0) {
+return "Mac";
+}else if(navigator.userAgent.indexOf("Linux")>0) {
+return "Linux";
+}else{
+return "NUll";
+}
+}
+if (validataOS() == "Linux") {
+  var obj = document.getElementById("css");
+  obj.setAttribute("href","mainlinux.css");
+}
 </script>
 </head>
 <body>
@@ -35,7 +52,8 @@
   <div>
     <div class="maxwidth leftfloat" align="left">
       <p>
-        <a class="fontverybig blacklink" href="https://cgdsss.gitee.io/cgd/"><b>Guangda Chen</b></a>
+        <br>
+        <a class="fontverybig blacklink" href="https://cgdsss.github.io/"><b>Guangda Chen</b></a>
         <a itemprop="sameAs" content="https://orcid.org/0000-0003-1888-9947" href="https://orcid.org/0000-0003-1888-9947" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
         <!-- <br> -->
         <!-- <div id = "title_br"><br></div> -->
@@ -45,6 +63,7 @@
   <div id = "title_div">
     <div class="width70 leftfloat" align="left" id = "title_div_left">
       <p>
+        <br>
         <a><b>Address : </b></a>
         <br>
         West Campus, USTC, 443 Huangshan Road, Hefei, China.<a href="https://surl.amap.com/JGWrkg1o7Ct" id="icon" ><img src="./pic/gmap.ico" /></a>
@@ -66,7 +85,8 @@
       <a href="./day.html" id="icon" ><img id="imglove" style="width: 100%" src="./pic/cgd3.jpg" /></a>
       <!-- <a id="wordlove" style="font-family: Comic Sans MS; font-size: 1.1em;"> <I>My sally girl, My love</I></a> -->
     <div id="img_br">
-      <br><br><br>
+      <br>
+      <br>
     </div>
     </div>
     <hr color=#987cb9 SIZE=2 />
@@ -75,7 +95,7 @@
   <div id="about">
     <div class="width25 leftfloat" align="left" id="about_title">
       <br>
-      <a class="fontbig">About</a>
+      <a class="fontbig blacklink">About</a>
     </div>
     <div class="width75 leftfloat linebigheight" align="left" id="about_content">
       <p style="text-align:justify;">
@@ -110,7 +130,7 @@
   <div id="edu">
     <div class="width25 leftfloat" align="left" id="edu_title">
       <br>
-      <a class="fontbig">Education</a>
+      <a class="fontbig blacklink">Education</a>
     </div>
     <div class="width75 leftfloat linebigheight" align="left" id="edu_content">
       <p>
@@ -139,39 +159,50 @@
   <div id="project">
     <div class="width25 leftfloat" align="left" id="project_title">
       <br>
-      <a class="fontbig">Project</a>
+      <a class="fontbig blacklink">Project</a>
     </div>
     <div class="width75 leftfloat linebigheight" align="left" id="project_content">
       <p>
-        <a  class="fontnorm bluelink pub-venue" href="http://www.panda.org.cn/"> <b>Panda Robot</b></a> <br> 
+        <a  class="fontnorm bluelink pub-venue" href="http://www.panda.org.cn/"> <b>Panda Robot</b></a> <a class="fontverysmall">(<em>2020 - now</em>)</a>  <br> 
         Tour guide robot at the <a href="http://www.panda.org.cn/china/events/museum/2021-03-16/8573.html" class="bluelink">Chengdu Giant Panda Museum</a><br>
-        - <a > Pedestrian detection and tracking</a>, <a href="https://www.bilibili.com/video/BV1HB4y1P7xE"  class="bluelink">[Demo]</a>
-        <br>
-        - <a > Long-term robust localization</a>, <a href="https://www.bilibili.com/video/BV1q5411w7qX"  class="bluelink">[Demo]</a>
-        <br>
-        - <a > Navigation in dense crowds</a>, <a href="https://www.bilibili.com/video/BV13Z4y1A7br"  class="bluelink">[Brief Demo]</a>, <a href="https://www.bilibili.com/video/BV1wU4y1V7cA?share_source=copy_web"  class="bluelink">[Full Demo]</a>
-        <br>
-        - <a style="color: #0066CC;"> Tour guide service v1.0</a>, <a href="https://www.bilibili.com/video/BV1UM4y1u7t8"  class="bluelink">[Demo]</a>
-        <br>
-        <a class="fontverysmall"><em>2020 - now</em></a>
+        
+        <ul>
+          <li>
+            Pedestrian detection and tracking, <a href="https://www.bilibili.com/video/BV1HB4y1P7xE"  class="bluelink">[Demo]</a>
+          </li>
+          <li>
+            Long-term robust localization, <a href="https://www.bilibili.com/video/BV1q5411w7qX"  class="bluelink">[Demo]</a>
+          </li>
+          <li>
+            Navigation in dense crowds, <a href="https://www.bilibili.com/video/BV13Z4y1A7br"  class="bluelink">[Brief Demo]</a>, <a href="https://www.bilibili.com/video/BV1wU4y1V7cA?share_source=copy_web"  class="bluelink">[Full Demo]</a>
+          </li>
+          <li>
+            <a style="color: #0066CC;"> Tour guide service v1.0</a>, <a href="https://www.bilibili.com/video/BV1UM4y1u7t8"  class="bluelink">[Demo]</a>
+          </li>
+        </ul>
       </p>
       <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
       <p>
-        <a  class="fontnorm bluelink pub-venue"> <b>DRL-based Navigation</b></a> <br> 
+        <a  class="fontnorm bluelink pub-venue"> <b>DRL-based Navigation</b></a> <a class="fontverysmall">(<em>2019 - now</em>)</a> <br> 
         <a class="pub-authors">Group Leader </a><br>
-        - <a href="#ref1" class="bluelink"> DQN-based Obstacle Avoidance [ref.7, 8]</a>, <a href="https://youtu.be/Eq4AjsFH_cU"  class="bluelink">[Demo]</a>
-        <br>
-        - <a href="#ref6" class="bluelink"> DRQN-based 3D Obstacle Avoidance [ref.6]</a>, <a href="https://youtu.be/cnCid0qOZg4"  class="bluelink">[Demo]</a>
-        <br>
-        - <a href="#ref0" class="bluelink"> Multi-Robot Collision Avoidance [ref.4, 5]</a>, <a href="https://youtu.be/KOb1q23L7-U"  class="bluelink">[Demo]</a>
-        <br>
-        - <a href="#ref7" class="bluelink">Crowd Navigation [ref.2]</a>, <a href="https://www.bilibili.com/video/BV1Vb4y1D7R6"  class="bluelink">[Demo]</a>, <a href="gitstats/authors.html" class="bluelink" target="_blank"> [Code statistics] </a>
-        <br>
-        <a class="fontverysmall"><em>2019 - now</em></a>
+        <ul>
+          <li>
+            <a href="#ref1" class="bluelink"> DQN-based Obstacle Avoidance [ref.7, 8]</a>, <a href="https://youtu.be/Eq4AjsFH_cU"  class="bluelink">[Demo]</a>
+          </li>
+          <li>
+            <a href="#ref6" class="bluelink"> DRQN-based 3D Obstacle Avoidance [ref.6]</a>, <a href="https://youtu.be/cnCid0qOZg4"  class="bluelink">[Demo]</a>
+          </li>
+          <li>
+            <a href="#ref0" class="bluelink"> Multi-Robot Collision Avoidance [ref.4, 5]</a>, <a href="https://youtu.be/KOb1q23L7-U"  class="bluelink">[Demo]</a>
+          </li>
+          <li>
+            <a href="#ref7" class="bluelink">Crowd Navigation [ref.2]</a>, <a href="https://www.bilibili.com/video/BV1Vb4y1D7R6"  class="bluelink">[Demo]</a>, <a href="gitstats/authors.html" class="bluelink" target="_blank"> [Code statistics] </a>
+          </li>
+        </ul>
       </p>
       <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
       <p>
-      <a href="http://www.robotics-kejia.com/about.php"  class="fontnorm bluelink"> <b>Kejia Robot</b></a> 
+      <a href="http://www.robotics-kejia.com/about.php"  class="fontnorm bluelink"> <b>Kejia Robot</b></a> <a class="fontverysmall">(<em>2015 - 2019</em>)</a>
       <br>
       Team: <a href="http://ai.ustc.edu.cn/en/robocup/atHome"  class="fontnorm bluelink">WrightEagle@Home</a>
       <br>
@@ -214,12 +245,12 @@
           <td><a class="pub-authors fontsmall">Leader</a></td>
         </tr>
       </table>
-      <a class="fontverysmall"><em>2015 - 2019</em></a>
       </p>
+      
       <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
-      <p>
-        <a href="https://optitrack.com/"  class="fontnorm bluelink"> <b>MoCap System</b></a> 
-        <br>
+      
+        <a href="https://optitrack.com/"  class="fontnorm bluelink"> <b>MoCap System</b></a> <a class="fontverysmall">(<em>2016 - 2018</em>)</a><br>
+        <p>
         for Testing: 
         <br>
         - <a href="pdf/Cleaning_Robots_Test.pdf" class="bluelink">Cleaning Robots Test</a><br>
@@ -235,7 +266,6 @@
         <br>
         - <a href="http://www.sohu.com/a/217691740_100071565"  class="bluelink">Real Simulation Unified Platform</a>
         <br>
-        <a class="fontverysmall"><em>2016 - 2018</em></a>
       </p>
     </div>
     <hr color=#987cb9 SIZE=1 />
@@ -254,436 +284,417 @@
         <a href="https://publons.com/researcher/2932962/guangda-chen/" class="fontlarge bluelink">[Publons]</a> 
         <a href="https://www.researchgate.net/profile/Guangda_Chen4" class="fontlarge bluelink">[ResearchGate]</a>
       </p>
-  
-  
-      <div class="width4 leftfloat" align="left">
-        [1]
-      </div>
-      <div class="width96 linebigheight" align="left" id="ref8">
-        <a href="https://doi.org/10.27517/d.cnki.gzkju.2021.000357"  class="fontnorm bluelink">Robot Navigation in Complex and 
-          Dynamic Pedestrian Scenarios</a>
-        <br>
-        <a class="pub-authors"><b>Guangda Chen</b>.</a> [<b><a class="award">PhD Thesis</a></b>]
-        <br>
-        <I><a class="bluelink pub-venue">University of Science and Technology of China</a></I>. Hefei, China. June, 2021.
-        <br>
-        <a class="bluelink" onclick="document.all.child8.style.display=(document.all.child8.style.display =='none')?'':'none'" >
-          [BibTeX]</a>, 
-        <a href="pdf/pdh_dissertation.pdf"  class="bluelink">[PDF]</a>, <a href="pdf/pdh_ppt.pdf"  class="bluelink">[Slides]</a>
-        <div id="child8" style="display:none" class="bibtexdiv">
-          @phdthesis{cgd-phd,<br>
-            title = {复杂动态行人场景下的机器人导航},<br>
-            author = {陈广大},<br>
-            year = {2021},<br>
-            school = {中国科学技术大学},<br>
-            ADDRESS    = "合肥"<br>
-          };          
-        </div> 
-        <br>
-        <br>
-      </div>
-  
-  
-      <div class="width4 leftfloat" align="left">
-        [2]
-      </div>
-      <div class="width96 linebigheight" align="left" id="ref7">
-        <a href="https://arxiv.org/abs/2109.02541"  class="fontnorm bluelink">Crowd-Aware Robot Navigation for Pedestrians with Multiple Collision
-          Avoidance Strategies via Map-based Deep Reinforcement Learning</a>
-        <br>
-        <a class="pub-authors">Shunyi Yao∗, <b>Guangda Chen∗</b>, Quecheng Qiu, Jun Ma, Xiaoping Chen and Jianmin Ji.</a>
-        <br>
-        <I><a href="https://www.iros2021.org/"  class="bluelink pub-venue">IROS 2021</a></I>, Accepted
-        <br>
-        <a class="bluelink" onclick="document.all.abs7.style.display=(document.all.abs7.style.display =='none')?'':'none'" >
-            [Abstract]</a>, 
-        <a href="https://www.bilibili.com/video/BV1Vb4y1D7R6"  class="bluelink">[Demo]</a>, 
-        <a href="pdf/2109.02541.pdf"  class="bluelink">[PDF]</a>
-        <br>
-        <div id="abs7" style="display:none" class="bibtexdiv">
-          <b>Abstract:</b> It is challenging for a mobile robot to navigate
-          through human crowds. Existing approaches usually assume
-          that pedestrians follow a predefined collision avoidance strategy,
-          like social force model (SFM) or optimal reciprocal collision
-          avoidance (ORCA). However, their performances commonly
-          need to be further improved for practical applications, where
-          pedestrians follow multiple different collision avoidance strategies. In this paper, we propose a map-based deep reinforcement
-          learning approach for crowd-aware robot navigation with
-          various pedestrians. We use the sensor map to represent the
-          environmental information around the robot, including its shape
-          and observable appearances of obstacles. We also introduce
-          the pedestrian map that specifies the movements of pedestrians
-          around the robot. By applying both maps as inputs of the
-          neural network, we show that a navigation policy can be trained
-          to better interact with pedestrians following different collision
-          avoidance strategies. We evaluate our approach under multiple
-          scenarios both in the simulator and on an actual robot. The
-          results show that our approach allows the robot to successfully
-          interact with various pedestrians and outperforms compared
-          methods in terms of the success rate.
-        </div> 
-        <br>
-      </div>
-
-
-      <div class="width4 leftfloat" align="left">
-        [3]
-      </div>
-      <div class="width96 linebigheight" align="left" id="refx1">
-        <a href="pdf/SMC21_0324_MS.pdf"  class="fontnorm bluelink">Distributed Reinforcement Learning with Self-Play in Parameterized 
-          Action Space</a>
-        <br>
-        <a class="pub-authors">Jun Ma, Shunyi Yao, <b>Guangda Chen</b>, Jiakai Song, and Jianmin Ji.</a>
-        <br>
-        <I><a href="http://ieeesmc2021.org/"  class="bluelink pub-venue">SMC 2021</a></I>, Accepted
-        <br>
-        <a class="bluelink" onclick="document.all.absx1.style.display=(document.all.absx1.style.display =='none')?'':'none'" >
-            [Abstract]</a>, 
-        <a href="https://youtu.be/BuL_li1vND4"  class="bluelink">[Demo]</a>, 
-        <a href="pdf/SMC21_0324_MS.pdf"  class="bluelink">[PDF]</a>
-        <br>
-        <div id="absx1" style="display:none" class="bibtexdiv">
-          <b>Abstract:</b> Self-play has been shown to be effective to provide
-          a proper training curriculum for a reinforcement learning
-          agent in competitive multi-agent environments without direct
-          supervision. However, its performance is still unstable for
-          problems with sparse rewards, e.g., the scoring task with
-          goalkeeper for robots in RoboCup soccer. It is challenging to
-          solve these tasks in reinforcement learning, especially for those
-          that require combining high-level actions with flexible control.
-          To address these challenges, we introduce a distributed self-play
-          training framework for an extended proximal policy optimization (PPO) algorithm that learns to act in parameterized action
-          space and plays against a group of opponents, i.e., a league.
-          Experiments on the domain of simulated RoboCup soccer show
-          that, the approach is effective and learns more robust policies
-          against various opponents compared to existing reinforcement
-          learning methods. A demonstration video is available online at
-          https://youtu.be/BuL_li1vND4.
-        </div> 
-        <br>
-      </div>
-
-  
-      <div class="width4 leftfloat" align="left">
-        [4]
-      </div>
-      <div class="width96 linebigheight" align="left" id="ref0">
-        <a href="https://www.mdpi.com/1424-8220/20/17/4836"  class="fontnorm bluelink">Distributed Non-Communicating Multi-Robot Collision 
-          Avoidance via Map-Based Deep Reinforcement Learning</a>
-        <br>
-        <a class="pub-authors"><b>Guangda Chen</b>, Shunyi Yao, Jun Ma, L. P., Y. C., P. X., </a><a href="http://staff.ustc.edu.cn/~jianmin/"  class="bluelink">Jianmin Ji</a><a class="pub-authors"> and Xiaoping Chen. </a>
-        <br>
-        <I><a href="https://www.mdpi.com/journal/sensors"  class="bluelink pub-venue"><b>Sensors</b></a></I>  (Volume: 20, <a href="https://www.mdpi.com/1424-8220/20/17"  class="bluelink">Issue: 17</a> , August, 27, 2020. <a href="https://jcr.clarivate.com/"  class="bluelink"  target="_blank">IF: 3.576</a>)
-        <br>
-        <a id="main1" class="bluelink" onclick="document.all.child0.style.display=(document.all.child0.style.display =='none')?'':'none'" >
-          [BibTeX]</a>, 
-        <a class="bluelink" onclick="document.all.abs0.style.display=(document.all.abs0.style.display =='none')?'':'none'" >
-            [Abstract]</a>, 
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7506975/"  class="bluelink">[PMC]</a>, 
-        <a href="pdf/DRL_NAV_sensors.pdf"  class="bluelink">[PDF]</a>, <a href="pdf/Acceptance-Certificate-sensors-882109.pdf"  class="bluelink">[Certificate]</a>, <a href="https://youtu.be/KOb1q23L7-U"  class="bluelink">[YouTube]</a>, <a href="https://www.bilibili.com/video/BV12f4y1Q7cx"  class="bluelink">[bili_1]</a>, <a href="https://www.bilibili.com/video/BV12v411C7sM"  class="bluelink">[bili_2]</a>
-        <br>
-        <div id="child0" style="display:none" class="bibtexdiv">
-          @Article{chen2020distributed,<br>
-            title = {Distributed Non-Communicating Multi-Robot Collision Avoidance via Map-Based Deep Reinforcement Learning},<br>
-            author = {Chen, Guangda and Yao, Shunyi and Ma, Jun and Pan, Lifan and Chen, Yu'an and Xu, Pei and Ji, Jianmin and Chen, Xiaoping},<br>
-            journal = {Sensors},<br>
-            volume = {20},<br>
-            number = {17},<br>
-            pages = {4836},<br>
-            year = {2020},<br>
-            publisher = {Multidisciplinary Digital Publishing Institute},<br>
-            doi = {10.3390/s20174836},<br>
-            url = {https://www.mdpi.com/1424-8220/20/17/4836}<br>
-          }
-        </div> 
-        <div id="abs0" style="display:none" class="bibtexdiv">
-          <b>Abstract:</b> It is challenging to avoid obstacles safely and efficiently for multiple robots of different shapes in distributed and communication-free scenarios, 
-          where robots do not communicate with each other and only sense other robots' positions and obstacles around them. 
-          Most existing multi-robot collision avoidance systems either require communication between robots or require expensive 
-          movement data of other robots, like velocities, accelerations and paths. In this paper, we propose a map-based deep reinforcement 
-          learning approach for multi-robot collision avoidance in a distributed and communication-free environment. 
-          We use the egocentric local grid map of a robot to represent the environmental information around it including its shape 
-          and observable appearances of other robots and obstacles, which can be easily generated by using multiple sensors or sensor fusion. 
-          Then we apply the distributed proximal policy optimization (DPPO) algorithm to train a convolutional neural network that directly 
-          maps three frames of egocentric local grid maps and the robot's relative local goal positions into low-level robot control commands. 
-          Compared to other methods, the map-based approach is more robust to noisy sensor data, does not require robots' movement data and 
-          considers sizes and shapes of related robots, which make it to be more efficient and easier to be deployed to real robots. 
-          We first train the neural network in a specified simulator of multiple mobile robots using DPPO, where a multi-stage curriculum 
-          learning strategy for multiple scenarios is used to improve the performance. Then we deploy the trained model to real robots to 
-          perform collision avoidance in their navigation without tedious parameter tuning. We evaluate the approach with multiple scenarios 
-          both in the simulator and on four differential-drive mobile robots in the real world. Both qualitative and quantitative experiments 
-          show that our approach is efficient and outperforms existing DRL-based approaches in many indicators. We also conduct ablation 
-          studies showing the positive effects of using egocentric grid maps and multi-stage curriculum learning.
-          <br>
-          <b>Keywords:</b> multi-robot navigation, distributed collision avoidance, deep reinforcement learning
-        </div> 
-        <br>
-      </div>
-      <div class="width4 leftfloat" align="left">
-        [5]
-      </div>
-      <div class="width96 linebigheight" align="left" id="ref4">
-        <a href="https://ieeexplore.ieee.org/abstract/document/9288300/"  class="fontnorm bluelink">Multi-Robot Collision Avoidance with Map-Based Deep Reinforcement Learning</a>
-        <br>
-        <a class="pub-authors">Shunyi Yao∗, <b>Guangda Chen∗</b>, Lifan Pan, Jun Ma, <a href="http://staff.ustc.edu.cn/~jianmin/"  class="bluelink">Jianmin Ji</a> and Xiaoping Chen. </a>
-        <br>
-        <I><a href="https://ictai2020.org/index.html"  class="bluelink pub-venue">ICTAI 2020</a></I>
-        <br><a id="main1" class="bluelink" onclick="document.all.child4.style.display=(document.all.child4.style.display =='none')?'':'none'" >
-          [BibTeX]</a>, 
-        <a class="bluelink" onclick="document.all.abs4.style.display=(document.all.abs4.style.display =='none')?'':'none'" >
-            [Abstract]</a>, 
-        <a href="pdf/ICTAI_2020.pdf"  class="bluelink">[PDF]</a>, <a href="https://youtu.be/jcLKlEXuFuk"  class="bluelink">[Demo]</a>
-        <br>
-        <div id="child4" style="display:none" class="bibtexdiv">
-          @InProceedings{yao2020multi,<br>
-            author = {Yao, Shunyi and Chen, Guangda and Pan, Lifan and Ma, Jun and Ji, Jianmin and Chen, Xiaoping},<br>
-            booktitle = {Proceedings of the 32th International Conference on Tools with Artificial Intelligence (ICTAI)}, <br>
-            title = {Multi-Robot Collision Avoidance with Map-based Deep Reinforcement Learning}, <br>
-            pages = {532--539}, <br>
-            year = {2020}, <br>
-            organization = {IEEE} <br>
-          }
-        </div> 
-        <div id="abs4" style="display:none" class="bibtexdiv">
-          <b>Abstract:</b> Multi-robot collision avoidance in a communicationfree environment is one of the key issues for mobile robotics
-          and autonomous driving. In this paper, we propose a mapbased deep reinforcement learning (DRL) approach for collision
-          avoidance of multiple robots, where robots do not communicate
-          with each other and only sense other robots’ positions and
-          the obstacles around them. We use the egocentric grid map
-          of a robot to represent the environmental information around
-          it, which can be easily generated by using multiple sensors
-          or sensor fusion. The learned policy generated from the DRL
-          model directly maps 3 frames of egocentric grid maps and
-          the robot’s relative local goal positions into low-level robot
-          control commands. Compared to other methods, the map-based
-          approach is more robust to noisy sensor data and does not require
-          the expensive movement data of other robots, like velocities,
-          accelerations and paths. We first train a convolutional neural
-          network for the navigation policy in a simulator of multiple
-          mobile robots using proximal policy optimization (PPO), where
-          curriculum learning strategy is used to accelerate the training
-          process. Then we deploy the trained model to real robots to
-          perform collision avoidance in their navigation. We evaluate the
-          approach with various scenarios both in the simulator and on
-          three differential-drive mobile robots in the real world. Both
-          qualitative and quantitative experiments show that our approach
-          is efficient with high success rate. The demonstration video can
-          be found at https://youtu.be/jcLKlEXuFuk.
-          <br>
-          <b>Keywords:</b> multi-robots collision avoidance, reinforcement learning, egocentric grid map
-        </div> 
-        <br>
-      </div>
-  
-      <div class="width4 leftfloat" align="left">
-        [6]
-      </div>
-      <div class="width96 linebigheight" align="left" id="ref6">
-        <a href=""  class="fontnorm bluelink">DRQN-based 3D Obstacle Avoidance with a Limited Field of View</a>
-        <br>
-        <a class="pub-authors">Yu'an Chen, <b>Guangda Chen</b>, Lifan Pan, Jun Ma, Yu Zhang, Yanyong Zhang and Jianmin Ji. </a>
-        <br>
-        <I><a href="https://www.iros2021.org/"  class="bluelink pub-venue">IROS 2021</a></I>, Accepted
-        <br>
-        <a class="bluelink" onclick="document.all.abs6.style.display=(document.all.abs6.style.display =='none')?'':'none'" >
-            [Abstract]</a>, 
-        <a href="https://youtu.be/cnCid0qOZg4"  class="bluelink">[Demo]</a>
-        <br>
-        <div id="abs6" style="display:none" class="bibtexdiv">
-          <b>Abstract:</b> In this paper, we propose a map-based end-to-end 
-          DRL approach for three-dimensional (3D) obstacle avoidance 
-          in a partially observed environment, which is applied to achieve 
-          autonomous navigation for an indoor mobile robot using a 
-          depth camera with a narrow field of view. We first train a 
-          neural network with LSTM units in a 3D simulator of mobile 
-          robots to approximate the Q-value function in double DRQN. 
-          We also use a curriculum learning strategy to accelerate and 
-          stabilize the training process. Then we deploy the trained 
-          model to a real robot to perform 3D obstacle avoidance in 
-          its navigation. We evaluate the proposed approach both in 
-          the simulated environment and on a robot in the real world. 
-          The experimental results show that the approach is efficient 
-          and easy to be deployed, and it performs well for 3D obstacle 
-          avoidance with a narrow observation angle, which outperforms 
-          other existing DRL-based models by 15.5% on success rate.
-        </div> 
-        <br>
-      </div>
-
-
-      <div class="width4 leftfloat" align="left">
-        [7]
-      </div>
-      <div class="width96 linebigheight" align="left" id="refx2">
-        <a href="https://link.springer.com/article/10.1007/s42979-021-00817-z"  class="fontnorm bluelink">Deep Reinforcement Learning of Map-Based Obstacle Avoidance for Mobile Robot Navigation</a>
-        <br>
-        <a class="pub-authors"><b>Guangda Chen</b>, Lifan Pan, Yu'an Chen, P. X., Z. W., P. W., Jianmin Ji and Xiaoping Chen.</a>
-        <br>
-        <I><a href="https://www.springer.com/journal/42979"  class="bluelink pub-venue"><b>SN Computer Science</b></a></I> (Volume: 2 , <a href="https://link.springer.com/journal/42979/volumes-and-issues/2-6"  class="bluelink">Issue: 6</a> , August, 18, 2021)
-        <br>
-        <a id="main1" class="bluelink" onclick="document.all.childx2.style.display=(document.all.childx2.style.display =='none')?'':'none'" >
-          [BibTeX]</a>, <a class="bluelink" onclick="document.all.absx2.style.display=(document.all.absx2.style.display =='none')?'':'none'" >
-            [Abstract]</a>, <a href="pdf/Chen2021_Article_DeepReinforcementLearningOfMap.pdf"  class="bluelink">[PDF]</a>
-        <br>
-        <div id="childx2" style="display:none" class="bibtexdiv">
-          @article{chen2021deep,<br>
-            title = {Deep Reinforcement Learning of Map-Based Obstacle Avoidance for Mobile Robot Navigation},<br>
-            author = {Chen, Guangda and Pan, Lifan and Chen, Yu'an and Xu, Pei and Wang, Zhiqiang and Wu, Peichen and Ji, Jianmin and Chen, Xiaoping},<br>
-            journal = {SN Computer Science},<br>
-            volume = {2},<br>
-            number = {6},<br>
-            pages={1--14},<br>
-            year = {2021},<br>
-            month = {August},<br>
-            publisher = {Springer},<br>
-            doi = {10.1007/s42979-021-00817-z},<br>
-            url = {https://doi.org/10.1007/s42979-021-00817-z}<br>
-          } 
-        </div>
-        <div id="absx2" style="display:none" class="bibtexdiv">
-          <b>Abstract:</b> Autonomous and safe navigation in complex environments without collisions is
-          particularly important for mobile robots. In this paper, we propose an end-to-end deep reinforcement learning method for mobile robot navigation with map-based obstacle avoidance.
-          Using the experience collected in the simulation environment, a convolutional neural network is trained to predict the proper steering operation of the robot based on its egocentric
-          local grid maps, which can accommodate various sensors and fusion algorithms. We use dueling double DQN with prioritized experienced replay technology to update parameters of
-          the network and integrate curriculum learning techniques to enhance its performance. The
-          trained deep neural network is then transferred and executed on a real-world mobile robot to
-          guide it to avoid local obstacles for long-range navigation. The qualitative and quantitative
-          evaluations of the new approach were performed in simulations and real robot experiments.
-          The results show that the end-to-end map-based obstacle avoidance model is easy to deploy,
-          without any fine-tuning, robust to sensor noise, compatible with different sensors, and better
-          than other related DRL-based models in many evaluation indicators.
-          <br>
-          <b>Keywords:</b> robot navigation, obstacle avoidance, deep reinforcement learning, grid map
-        </div> 
-        <br>
-      </div>
-  
-  
-      <div class="width4 leftfloat" align="left">
-        [8]
-      </div>
-      <div class="width96 linebigheight" align="left" id="ref1">
-        <a href="https://ieeexplore.ieee.org/document/9238090"  class="fontnorm bluelink">Robot Navigation with Map-Based Deep Reinforcement Learning</a>
-        <br>
-        <a class="pub-authors"><b>Guangda Chen</b>, Lifan Pan, Yu'an Chen, P. X., Z. W., P. W., </a><a href="http://staff.ustc.edu.cn/~jianmin/"  class="bluelink">Jianmin Ji</a><a class="pub-authors"> and Xiaoping Chen. </a>
-        <br>
-        <I><a href="http://www.icnsc2020.org/"  class="bluelink pub-venue">ICNSC 2020</a></I>, [<b><a class="award">Best Student Paper Award</a></b>]
-        <br><a id="main1" class="bluelink" onclick="document.all.child2.style.display=(document.all.child2.style.display =='none')?'':'none'" >
-          [BibTeX]</a>, 
-        <a class="bluelink" onclick="document.all.abs1.style.display=(document.all.abs1.style.display =='none')?'':'none'" >
-            [Abstract]</a>, 
-        <a href="pdf/ICNSC_2020_paper_11.pdf"  class="bluelink">[PDF]</a>, <a href="https://arxiv.org/abs/2002.04349"  class="bluelink">[arXiv]</a>, <a href="https://youtu.be/Eq4AjsFH_cU"  class="bluelink">[Demo]</a>, <a href="pdf/ICNSC2020slide.pdf"  class="bluelink">[Slides]</a>, <a href="pdf/ICNSC2020Award.pdf"  class="bluelink">[Award]</a>
-        <br>
-        <div id="child2" style="display:none" class="bibtexdiv">
-          @InProceedings{chen2020robot,<br>
-            title = {Robot Navigation with Map-Based Deep Reinforcement Learning},<br>
-            author = {Chen, Guangda and Pan, Lifan and Chen, Yu'an and Xu, Pei and Wang, Zhiqiang and Wu, Peichen and Ji, Jianmin and Chen, Xiaoping},<br>
-            year = {2020},<br>
-            pages = {1-6},<br>
-            address = {Nanjing, China},<br>
-            doi = {10.1109/ICNSC48988.2020.9238090},<br>
-            organization = {IEEE}<br>
-          }
-        </div> 
-        <div id="abs1" style="display:none" class="bibtexdiv">
-          <b>Abstract:</b> This paper proposes an end-to-end deep reinforcement learning approach for mobile robot navigation with
-          dynamic obstacles avoidance. Using experience collected in a
-          simulation environment, a convolutional neural network (CNN)
-          is trained to predict proper steering actions of a robot from its
-          egocentric local occupancy maps, which accommodate various
-          sensors and fusion algorithms. The trained neural network is
-          then transferred and executed on a real-world mobile robot to
-          guide its local path planning. The new approach is evaluated
-          both qualitatively and quantitatively in simulation and realworld robot experiments. The results show that the map-based
-          end-to-end navigation model is easy to be deployed to a robotic
-          platform, robust to sensor noise and outperforms other existing
-          DRL-based models in many indicators.
-          <br>
-          <b>Keywords:</b> robot navigation, obstacle avoidance, reinforcement learning, occupancy map
-        </div> 
-        <br>
-      </div>
-      <div class="width4 leftfloat" align="left">
-        [9]
-      </div>
-      <div class="width96 linebigheight" align="left" id="ref2">
-        <a href="https://ieeexplore.ieee.org/document/8588983"  class="fontnorm bluelink">Accurate Intrinsic and Extrinsic Calibration of RGB-D Cameras with GP-based Depth Correction</a>
-        <br>
-        <a class="pub-authors"><b>Guangda Chen</b>, Guowei Cui, Zhongxiao Jin, </a><a href="http://staff.ustc.edu.cn/~wufeng02/"  class="bluelink">Feng Wu</a><a class="pub-authors"> and Xiaoping Chen.</a>
-        <br>
-        <I><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361"  class="bluelink pub-venue"><b>IEEE Sensors Journal</b></a></I> (Volume: 19 , <a href="https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=8662729"  class="bluelink">Issue: 7</a> , April, 1, 2019. <a href="https://jcr.clarivate.com/"  class="bluelink"  target="_blank">IF: 3.301</a>)
-        <br>
-        <a id="main1" class="bluelink" onclick="document.all.child1.style.display=(document.all.child1.style.display =='none')?'':'none'" >
-          [BibTeX]</a>, 
-          <a class="bluelink" onclick="document.all.abs2.style.display=(document.all.abs2.style.display =='none')?'':'none'" >
-            [Abstract]</a>, 
-          <a href="pdf/rgbd_cal_j.pdf"  class="bluelink">[PDF]</a>, 
-          <a href="pdf/jsen.pdf"  class="bluelink">[PDF_2]</a>
-          <div id="child1" style="display:none" class="bibtexdiv">
-            @Article{chen2019accurate,<br>
-              title = {Accurate Intrinsic and Extrinsic Calibration of {RGB}-D Cameras With {GP}-Based Depth Correction},<br>
-              author = {Guangda Chen and Guowei Cui and Zhongxiao Jin and Feng Wu and Xiaoping Chen},<br>
-              journal = {IEEE Sensors Journal},<br>
-              volume = {19},<br>
-              number = {7},<br>
-              pages = {2685--2694},<br>
-              year = 2019,<br>
-              month = {apr},<br>
-              publisher = {IEEE},<br>
-              doi = {10.1109/jsen.2018.2889805},<br>
-              url = {https://doi.org/10.1109%2Fjsen.2018.2889805}<br>
-            } 
-          </div> 
-          <div id="abs2" style="display:none" class="bibtexdiv">
-            <b>Abstract:</b> In recent years, more and more robots have been
-            equipped with low-cost RGB-D sensors, such as Microsoft Kinect
-            and Intel Realsense, for safe navigation and active interaction
-            with objects and people. In order to obtain more accurate
-            and reliable fused color and depth information (coloured point
-            clouds), not only the intrinsic and extrinsic parameters of color
-            and depth sensor should be precisely calibrated, but also the
-            external corrections of depth measurements are required. In
-            this paper, using motion capture system, we propose a reliable
-            calibration framework that enables the precise estimation of the
-            intrinsic and extrinsic parameters of RGB-D sensors and provide
-            a model-free depth calibration method based on heteroscedastic
-            Gaussian Processes. Compared with the existing depth correction
-            techniques, our method can simultaneously estimate the mean
-            and variance of the depth error at different measurement
-            distances, i.e., the probability distribution of the depth error
-            relative to the measured distance, which is essential in the state
-            estimation problems. To verify the effectiveness of our approach,
-            we conduct a thorough qualitative and quantitative analysis of
-            the major steps of our calibration method, and compare our
-            experimental results with other related work. Furthermore, we
-            demonstrate an experiment about the overall improvement of
-            visual SLAM with a Kinect device calibrated by our calibration
-            technique.
+      <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+      <ol>
+        <li>
+          <p>      <div class="linebigheight" align="left" id="ref8">
+            <a href="https://doi.org/10.27517/d.cnki.gzkju.2021.000357"  class="fontnorm bluelink">Robot Navigation in Complex and 
+              Dynamic Pedestrian Scenarios</a>
             <br>
-            <b>Keywords:</b> RGB-D cameras, calibration, motion capture system
-          </div> 
-        <br>
-        <br>
-      </div>
-  
-      <div class="width4 leftfloat" align="left">
-        [10]
-      </div>
-      <div class="width96 linebigheight" align="left" id="ref1">
-        <a href="pdf/一种分布式多机器人的导航方法.pdf"  class="fontnorm bluelink">一种分布式多机器人的导航方法</a>[P]
-        <br>
-        <a class="pub-authors"><b>陈广大</b>, 姚舜一, 吉建民.</a>
-        <br>
-        <a href="https://d.wanfangdata.com.cn/patent/ChJQYXRlbnROZXdTMjAyMTAxMDkSEENOMjAyMDExMTI1NDIwLjQaCHVvbG1yN215"  class="bluelink pub-venue">中国专利</a>：CN112304314A, 2021-02-02.
-        <br>
-        <br>
-      </div>
-
-      <div class="linebigheight" align="left">
+            <a class="pub-authors"><b>Guangda Chen</b>.</a> [<b><a class="award">PhD Thesis</a></b>]
+            <br>
+            <I><a class="bluelink pub-venue">University of Science and Technology of China</a></I>. Hefei, China. June, 2021.
+            <br>
+            <a class="bluelink" onclick="document.all.child8.style.display=(document.all.child8.style.display =='none')?'':'none'" >
+              [BibTeX]</a>, 
+            <a href="pdf/pdh_dissertation.pdf"  class="bluelink">[PDF]</a>, <a href="pdf/pdh_ppt.pdf"  class="bluelink">[Slides]</a>
+            <div id="child8" style="display:none" class="bibtexdiv">
+              @phdthesis{cgd-phd,<br>
+                title = {复杂动态行人场景下的机器人导航},<br>
+                author = {陈广大},<br>
+                year = {2021},<br>
+                school = {中国科学技术大学},<br>
+                ADDRESS    = "合肥"<br>
+              };          
+            </div> 
+          </div></p>
+        </li>
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+        <li>
+          <p>      <div class="linebigheight" align="left" id="ref7">
+            <a href="https://arxiv.org/abs/2109.02541"  class="fontnorm bluelink">Crowd-Aware Robot Navigation for Pedestrians with Multiple Collision
+              Avoidance Strategies via Map-based Deep Reinforcement Learning</a>
+            <br>
+            <a class="pub-authors">Shunyi Yao∗, <b>Guangda Chen∗</b>, Quecheng Qiu, Jun Ma, Xiaoping Chen and Jianmin Ji.</a>
+            <br>
+            <I><a href="https://www.iros2021.org/"  class="bluelink pub-venue">IROS 2021</a></I>, Accepted
+            <br>
+            <a class="bluelink" onclick="document.all.abs7.style.display=(document.all.abs7.style.display =='none')?'':'none'" >
+                [Abstract]</a>, 
+            <a href="https://www.bilibili.com/video/BV1Vb4y1D7R6"  class="bluelink">[Demo]</a>, 
+            <a href="pdf/2109.02541.pdf"  class="bluelink">[PDF]</a>
+            <br>
+            <div id="abs7" style="display:none" class="bibtexdiv">
+              <b>Abstract:</b> It is challenging for a mobile robot to navigate
+              through human crowds. Existing approaches usually assume
+              that pedestrians follow a predefined collision avoidance strategy,
+              like social force model (SFM) or optimal reciprocal collision
+              avoidance (ORCA). However, their performances commonly
+              need to be further improved for practical applications, where
+              pedestrians follow multiple different collision avoidance strategies. In this paper, we propose a map-based deep reinforcement
+              learning approach for crowd-aware robot navigation with
+              various pedestrians. We use the sensor map to represent the
+              environmental information around the robot, including its shape
+              and observable appearances of obstacles. We also introduce
+              the pedestrian map that specifies the movements of pedestrians
+              around the robot. By applying both maps as inputs of the
+              neural network, we show that a navigation policy can be trained
+              to better interact with pedestrians following different collision
+              avoidance strategies. We evaluate our approach under multiple
+              scenarios both in the simulator and on an actual robot. The
+              results show that our approach allows the robot to successfully
+              interact with various pedestrians and outperforms compared
+              methods in terms of the success rate.
+            </div> 
+          </div></p>
+        </li>
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+        <li>
+          <p>      <div class="linebigheight" align="left" id="refx1">
+            <a href="pdf/SMC21_0324_MS.pdf"  class="fontnorm bluelink">Distributed Reinforcement Learning with Self-Play in Parameterized 
+              Action Space</a>
+            <br>
+            <a class="pub-authors">Jun Ma, Shunyi Yao, <b>Guangda Chen</b>, Jiakai Song, and Jianmin Ji.</a>
+            <br>
+            <I><a href="http://ieeesmc2021.org/"  class="bluelink pub-venue">SMC 2021</a></I>, Accepted
+            <br>
+            <a class="bluelink" onclick="document.all.absx1.style.display=(document.all.absx1.style.display =='none')?'':'none'" >
+                [Abstract]</a>, 
+            <a href="https://youtu.be/BuL_li1vND4"  class="bluelink">[Demo]</a>, 
+            <a href="pdf/SMC21_0324_MS.pdf"  class="bluelink">[PDF]</a>
+            <br>
+            <div id="absx1" style="display:none" class="bibtexdiv">
+              <b>Abstract:</b> Self-play has been shown to be effective to provide
+              a proper training curriculum for a reinforcement learning
+              agent in competitive multi-agent environments without direct
+              supervision. However, its performance is still unstable for
+              problems with sparse rewards, e.g., the scoring task with
+              goalkeeper for robots in RoboCup soccer. It is challenging to
+              solve these tasks in reinforcement learning, especially for those
+              that require combining high-level actions with flexible control.
+              To address these challenges, we introduce a distributed self-play
+              training framework for an extended proximal policy optimization (PPO) algorithm that learns to act in parameterized action
+              space and plays against a group of opponents, i.e., a league.
+              Experiments on the domain of simulated RoboCup soccer show
+              that, the approach is effective and learns more robust policies
+              against various opponents compared to existing reinforcement
+              learning methods. A demonstration video is available online at
+              https://youtu.be/BuL_li1vND4.
+            </div> 
+          </div></p>
+        </li>
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+        <li>
+          <p>      <div class="linebigheight" align="left" id="ref0">
+            <a href="https://www.mdpi.com/1424-8220/20/17/4836"  class="fontnorm bluelink">Distributed Non-Communicating Multi-Robot Collision 
+              Avoidance via Map-Based Deep Reinforcement Learning</a>
+            <br>
+            <a class="pub-authors"><b>Guangda Chen</b>, Shunyi Yao, Jun Ma, L. P., Y. C., P. X., </a><a href="http://staff.ustc.edu.cn/~jianmin/"  class="bluelink">Jianmin Ji</a><a class="pub-authors"> and Xiaoping Chen. </a>
+            <br>
+            <I><a href="https://www.mdpi.com/journal/sensors"  class="bluelink pub-venue"><b>Sensors</b></a></I>  (Volume: 20, <a href="https://www.mdpi.com/1424-8220/20/17"  class="bluelink">Issue: 17</a> , August, 27, 2020. <a href="https://jcr.clarivate.com/"  class="bluelink"  target="_blank">IF: 3.576</a>)
+            <br>
+            <a id="main1" class="bluelink" onclick="document.all.child0.style.display=(document.all.child0.style.display =='none')?'':'none'" >
+              [BibTeX]</a>, 
+            <a class="bluelink" onclick="document.all.abs0.style.display=(document.all.abs0.style.display =='none')?'':'none'" >
+                [Abstract]</a>, 
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7506975/"  class="bluelink">[PMC]</a>, 
+            <a href="pdf/DRL_NAV_sensors.pdf"  class="bluelink">[PDF]</a>, <a href="pdf/Acceptance-Certificate-sensors-882109.pdf"  class="bluelink">[Certificate]</a>, <a href="https://youtu.be/KOb1q23L7-U"  class="bluelink">[YouTube]</a>, <a href="https://www.bilibili.com/video/BV12f4y1Q7cx"  class="bluelink">[bili_1]</a>, <a href="https://www.bilibili.com/video/BV12v411C7sM"  class="bluelink">[bili_2]</a>
+            <br>
+            <div id="child0" style="display:none" class="bibtexdiv">
+              @Article{chen2020distributed,<br>
+                title = {Distributed Non-Communicating Multi-Robot Collision Avoidance via Map-Based Deep Reinforcement Learning},<br>
+                author = {Chen, Guangda and Yao, Shunyi and Ma, Jun and Pan, Lifan and Chen, Yu'an and Xu, Pei and Ji, Jianmin and Chen, Xiaoping},<br>
+                journal = {Sensors},<br>
+                volume = {20},<br>
+                number = {17},<br>
+                pages = {4836},<br>
+                year = {2020},<br>
+                publisher = {Multidisciplinary Digital Publishing Institute},<br>
+                doi = {10.3390/s20174836},<br>
+                url = {https://www.mdpi.com/1424-8220/20/17/4836}<br>
+              }
+            </div> 
+            <div id="abs0" style="display:none" class="bibtexdiv">
+              <b>Abstract:</b> It is challenging to avoid obstacles safely and efficiently for multiple robots of different shapes in distributed and communication-free scenarios, 
+              where robots do not communicate with each other and only sense other robots' positions and obstacles around them. 
+              Most existing multi-robot collision avoidance systems either require communication between robots or require expensive 
+              movement data of other robots, like velocities, accelerations and paths. In this paper, we propose a map-based deep reinforcement 
+              learning approach for multi-robot collision avoidance in a distributed and communication-free environment. 
+              We use the egocentric local grid map of a robot to represent the environmental information around it including its shape 
+              and observable appearances of other robots and obstacles, which can be easily generated by using multiple sensors or sensor fusion. 
+              Then we apply the distributed proximal policy optimization (DPPO) algorithm to train a convolutional neural network that directly 
+              maps three frames of egocentric local grid maps and the robot's relative local goal positions into low-level robot control commands. 
+              Compared to other methods, the map-based approach is more robust to noisy sensor data, does not require robots' movement data and 
+              considers sizes and shapes of related robots, which make it to be more efficient and easier to be deployed to real robots. 
+              We first train the neural network in a specified simulator of multiple mobile robots using DPPO, where a multi-stage curriculum 
+              learning strategy for multiple scenarios is used to improve the performance. Then we deploy the trained model to real robots to 
+              perform collision avoidance in their navigation without tedious parameter tuning. We evaluate the approach with multiple scenarios 
+              both in the simulator and on four differential-drive mobile robots in the real world. Both qualitative and quantitative experiments 
+              show that our approach is efficient and outperforms existing DRL-based approaches in many indicators. We also conduct ablation 
+              studies showing the positive effects of using egocentric grid maps and multi-stage curriculum learning.
+              <br>
+              <b>Keywords:</b> multi-robot navigation, distributed collision avoidance, deep reinforcement learning
+            </div> 
+          </div></p>
+        </li>
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+        <li>
+          <p>      <div class="linebigheight" align="left" id="ref4">
+            <a href="https://ieeexplore.ieee.org/abstract/document/9288300/"  class="fontnorm bluelink">Multi-Robot Collision Avoidance with Map-Based Deep Reinforcement Learning</a>
+            <br>
+            <a class="pub-authors">Shunyi Yao∗, <b>Guangda Chen∗</b>, Lifan Pan, Jun Ma, <a href="http://staff.ustc.edu.cn/~jianmin/"  class="bluelink">Jianmin Ji</a> and Xiaoping Chen. </a>
+            <br>
+            <I><a href="https://ictai2020.org/index.html"  class="bluelink pub-venue">ICTAI 2020</a></I>
+            <br><a id="main1" class="bluelink" onclick="document.all.child4.style.display=(document.all.child4.style.display =='none')?'':'none'" >
+              [BibTeX]</a>, 
+            <a class="bluelink" onclick="document.all.abs4.style.display=(document.all.abs4.style.display =='none')?'':'none'" >
+                [Abstract]</a>, 
+            <a href="pdf/ICTAI_2020.pdf"  class="bluelink">[PDF]</a>, <a href="https://youtu.be/jcLKlEXuFuk"  class="bluelink">[Demo]</a>
+            <br>
+            <div id="child4" style="display:none" class="bibtexdiv">
+              @InProceedings{yao2020multi,<br>
+                author = {Yao, Shunyi and Chen, Guangda and Pan, Lifan and Ma, Jun and Ji, Jianmin and Chen, Xiaoping},<br>
+                booktitle = {Proceedings of the 32th International Conference on Tools with Artificial Intelligence (ICTAI)}, <br>
+                title = {Multi-Robot Collision Avoidance with Map-based Deep Reinforcement Learning}, <br>
+                pages = {532--539}, <br>
+                year = {2020}, <br>
+                organization = {IEEE} <br>
+              }
+            </div> 
+            <div id="abs4" style="display:none" class="bibtexdiv">
+              <b>Abstract:</b> Multi-robot collision avoidance in a communicationfree environment is one of the key issues for mobile robotics
+              and autonomous driving. In this paper, we propose a mapbased deep reinforcement learning (DRL) approach for collision
+              avoidance of multiple robots, where robots do not communicate
+              with each other and only sense other robots’ positions and
+              the obstacles around them. We use the egocentric grid map
+              of a robot to represent the environmental information around
+              it, which can be easily generated by using multiple sensors
+              or sensor fusion. The learned policy generated from the DRL
+              model directly maps 3 frames of egocentric grid maps and
+              the robot’s relative local goal positions into low-level robot
+              control commands. Compared to other methods, the map-based
+              approach is more robust to noisy sensor data and does not require
+              the expensive movement data of other robots, like velocities,
+              accelerations and paths. We first train a convolutional neural
+              network for the navigation policy in a simulator of multiple
+              mobile robots using proximal policy optimization (PPO), where
+              curriculum learning strategy is used to accelerate the training
+              process. Then we deploy the trained model to real robots to
+              perform collision avoidance in their navigation. We evaluate the
+              approach with various scenarios both in the simulator and on
+              three differential-drive mobile robots in the real world. Both
+              qualitative and quantitative experiments show that our approach
+              is efficient with high success rate. The demonstration video can
+              be found at https://youtu.be/jcLKlEXuFuk.
+              <br>
+              <b>Keywords:</b> multi-robots collision avoidance, reinforcement learning, egocentric grid map
+            </div> 
+          </div></p>
+        </li>
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+        <li>
+          <p>      <div class="linebigheight" align="left" id="ref6">
+            <a href=""  class="fontnorm bluelink">DRQN-based 3D Obstacle Avoidance with a Limited Field of View</a>
+            <br>
+            <a class="pub-authors">Yu'an Chen, <b>Guangda Chen</b>, Lifan Pan, Jun Ma, Yu Zhang, Yanyong Zhang and Jianmin Ji. </a>
+            <br>
+            <I><a href="https://www.iros2021.org/"  class="bluelink pub-venue">IROS 2021</a></I>, Accepted
+            <br>
+            <a class="bluelink" onclick="document.all.abs6.style.display=(document.all.abs6.style.display =='none')?'':'none'" >
+                [Abstract]</a>, 
+            <a href="https://youtu.be/cnCid0qOZg4"  class="bluelink">[Demo]</a>
+            <br>
+            <div id="abs6" style="display:none" class="bibtexdiv">
+              <b>Abstract:</b> In this paper, we propose a map-based end-to-end 
+              DRL approach for three-dimensional (3D) obstacle avoidance 
+              in a partially observed environment, which is applied to achieve 
+              autonomous navigation for an indoor mobile robot using a 
+              depth camera with a narrow field of view. We first train a 
+              neural network with LSTM units in a 3D simulator of mobile 
+              robots to approximate the Q-value function in double DRQN. 
+              We also use a curriculum learning strategy to accelerate and 
+              stabilize the training process. Then we deploy the trained 
+              model to a real robot to perform 3D obstacle avoidance in 
+              its navigation. We evaluate the proposed approach both in 
+              the simulated environment and on a robot in the real world. 
+              The experimental results show that the approach is efficient 
+              and easy to be deployed, and it performs well for 3D obstacle 
+              avoidance with a narrow observation angle, which outperforms 
+              other existing DRL-based models by 15.5% on success rate.
+            </div> 
+          </div></p>
+        </li>
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+        <li>
+          <p>
+            <div class="linebigheight" align="left" id="refx2">
+              <a href="https://link.springer.com/article/10.1007/s42979-021-00817-z"  class="fontnorm bluelink">Deep Reinforcement Learning of Map-Based Obstacle Avoidance for Mobile Robot Navigation</a>
+              <br>
+              <a class="pub-authors"><b>Guangda Chen</b>, Lifan Pan, Yu'an Chen, P. X., Z. W., P. W., Jianmin Ji and Xiaoping Chen.</a>
+              <br>
+              <I><a href="https://www.springer.com/journal/42979"  class="bluelink pub-venue"><b>SN Computer Science</b></a></I> (Volume: 2 , <a href="https://link.springer.com/journal/42979/volumes-and-issues/2-6"  class="bluelink">Issue: 6</a> , August, 18, 2021)
+              <br>
+              <a id="main1" class="bluelink" onclick="document.all.childx2.style.display=(document.all.childx2.style.display =='none')?'':'none'" >
+                [BibTeX]</a>, <a class="bluelink" onclick="document.all.absx2.style.display=(document.all.absx2.style.display =='none')?'':'none'" >
+                  [Abstract]</a>, <a href="pdf/Chen2021_Article_DeepReinforcementLearningOfMap.pdf"  class="bluelink">[PDF]</a>
+              <br>
+              <div id="childx2" style="display:none" class="bibtexdiv">
+                @article{chen2021deep,<br>
+                  title = {Deep Reinforcement Learning of Map-Based Obstacle Avoidance for Mobile Robot Navigation},<br>
+                  author = {Chen, Guangda and Pan, Lifan and Chen, Yu'an and Xu, Pei and Wang, Zhiqiang and Wu, Peichen and Ji, Jianmin and Chen, Xiaoping},<br>
+                  journal = {SN Computer Science},<br>
+                  volume = {2},<br>
+                  number = {6},<br>
+                  pages={1--14},<br>
+                  year = {2021},<br>
+                  month = {August},<br>
+                  publisher = {Springer},<br>
+                  doi = {10.1007/s42979-021-00817-z},<br>
+                  url = {https://doi.org/10.1007/s42979-021-00817-z}<br>
+                } 
+              </div>
+              <div id="absx2" style="display:none" class="bibtexdiv">
+                <b>Abstract:</b> Autonomous and safe navigation in complex environments without collisions is
+                particularly important for mobile robots. In this paper, we propose an end-to-end deep reinforcement learning method for mobile robot navigation with map-based obstacle avoidance.
+                Using the experience collected in the simulation environment, a convolutional neural network is trained to predict the proper steering operation of the robot based on its egocentric
+                local grid maps, which can accommodate various sensors and fusion algorithms. We use dueling double DQN with prioritized experienced replay technology to update parameters of
+                the network and integrate curriculum learning techniques to enhance its performance. The
+                trained deep neural network is then transferred and executed on a real-world mobile robot to
+                guide it to avoid local obstacles for long-range navigation. The qualitative and quantitative
+                evaluations of the new approach were performed in simulations and real robot experiments.
+                The results show that the end-to-end map-based obstacle avoidance model is easy to deploy,
+                without any fine-tuning, robust to sensor noise, compatible with different sensors, and better
+                than other related DRL-based models in many evaluation indicators.
+                <br>
+                <b>Keywords:</b> robot navigation, obstacle avoidance, deep reinforcement learning, grid map
+              </div> 
+            </div>
+          </p>
+        </li>
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+        <li>
+          <p>
+            <div class="linebigheight" align="left" id="ref1">
+              <a href="https://ieeexplore.ieee.org/document/9238090"  class="fontnorm bluelink">Robot Navigation with Map-Based Deep Reinforcement Learning</a>
+              <br>
+              <a class="pub-authors"><b>Guangda Chen</b>, Lifan Pan, Yu'an Chen, P. X., Z. W., P. W., </a><a href="http://staff.ustc.edu.cn/~jianmin/"  class="bluelink">Jianmin Ji</a><a class="pub-authors"> and Xiaoping Chen. </a>
+              <br>
+              <I><a href="http://www.icnsc2020.org/"  class="bluelink pub-venue">ICNSC 2020</a></I>, [<b><a class="award">Best Student Paper Award</a></b>]
+              <br><a id="main1" class="bluelink" onclick="document.all.child2.style.display=(document.all.child2.style.display =='none')?'':'none'" >
+                [BibTeX]</a>, 
+              <a class="bluelink" onclick="document.all.abs1.style.display=(document.all.abs1.style.display =='none')?'':'none'" >
+                  [Abstract]</a>, 
+              <a href="pdf/ICNSC_2020_paper_11.pdf"  class="bluelink">[PDF]</a>, <a href="https://arxiv.org/abs/2002.04349"  class="bluelink">[arXiv]</a>, <a href="https://youtu.be/Eq4AjsFH_cU"  class="bluelink">[Demo]</a>, <a href="pdf/ICNSC2020slide.pdf"  class="bluelink">[Slides]</a>, <a href="pdf/ICNSC2020Award.pdf"  class="bluelink">[Award]</a>
+              <br>
+              <div id="child2" style="display:none" class="bibtexdiv">
+                @InProceedings{chen2020robot,<br>
+                  title = {Robot Navigation with Map-Based Deep Reinforcement Learning},<br>
+                  author = {Chen, Guangda and Pan, Lifan and Chen, Yu'an and Xu, Pei and Wang, Zhiqiang and Wu, Peichen and Ji, Jianmin and Chen, Xiaoping},<br>
+                  year = {2020},<br>
+                  pages = {1-6},<br>
+                  address = {Nanjing, China},<br>
+                  doi = {10.1109/ICNSC48988.2020.9238090},<br>
+                  organization = {IEEE}<br>
+                }
+              </div> 
+              <div id="abs1" style="display:none" class="bibtexdiv">
+                <b>Abstract:</b> This paper proposes an end-to-end deep reinforcement learning approach for mobile robot navigation with
+                dynamic obstacles avoidance. Using experience collected in a
+                simulation environment, a convolutional neural network (CNN)
+                is trained to predict proper steering actions of a robot from its
+                egocentric local occupancy maps, which accommodate various
+                sensors and fusion algorithms. The trained neural network is
+                then transferred and executed on a real-world mobile robot to
+                guide its local path planning. The new approach is evaluated
+                both qualitatively and quantitatively in simulation and realworld robot experiments. The results show that the map-based
+                end-to-end navigation model is easy to be deployed to a robotic
+                platform, robust to sensor noise and outperforms other existing
+                DRL-based models in many indicators.
+                <br>
+                <b>Keywords:</b> robot navigation, obstacle avoidance, reinforcement learning, occupancy map
+              </div> 
+            </div>
+          </p>
+        </li>
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+        <li>
+          <p>
+            <div class="linebigheight" align="left" id="ref2">
+              <a href="https://ieeexplore.ieee.org/document/8588983"  class="fontnorm bluelink">Accurate Intrinsic and Extrinsic Calibration of RGB-D Cameras with GP-based Depth Correction</a>
+              <br>
+              <a class="pub-authors"><b>Guangda Chen</b>, Guowei Cui, Zhongxiao Jin, </a><a href="http://staff.ustc.edu.cn/~wufeng02/"  class="bluelink">Feng Wu</a><a class="pub-authors"> and Xiaoping Chen.</a>
+              <br>
+              <I><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361"  class="bluelink pub-venue"><b>IEEE Sensors Journal</b></a></I> (Volume: 19 , <a href="https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=8662729"  class="bluelink">Issue: 7</a> , April, 1, 2019. <a href="https://jcr.clarivate.com/"  class="bluelink"  target="_blank">IF: 3.301</a>)
+              <br>
+              <a id="main1" class="bluelink" onclick="document.all.child1.style.display=(document.all.child1.style.display =='none')?'':'none'" >
+                [BibTeX]</a>, 
+                <a class="bluelink" onclick="document.all.abs2.style.display=(document.all.abs2.style.display =='none')?'':'none'" >
+                  [Abstract]</a>, 
+                <a href="pdf/rgbd_cal_j.pdf"  class="bluelink">[PDF]</a>, 
+                <a href="pdf/jsen.pdf"  class="bluelink">[PDF_2]</a>
+                <div id="child1" style="display:none" class="bibtexdiv">
+                  @Article{chen2019accurate,<br>
+                    title = {Accurate Intrinsic and Extrinsic Calibration of {RGB}-D Cameras With {GP}-Based Depth Correction},<br>
+                    author = {Guangda Chen and Guowei Cui and Zhongxiao Jin and Feng Wu and Xiaoping Chen},<br>
+                    journal = {IEEE Sensors Journal},<br>
+                    volume = {19},<br>
+                    number = {7},<br>
+                    pages = {2685--2694},<br>
+                    year = 2019,<br>
+                    month = {apr},<br>
+                    publisher = {IEEE},<br>
+                    doi = {10.1109/jsen.2018.2889805},<br>
+                    url = {https://doi.org/10.1109%2Fjsen.2018.2889805}<br>
+                  } 
+                </div> 
+                <div id="abs2" style="display:none" class="bibtexdiv">
+                  <b>Abstract:</b> In recent years, more and more robots have been
+                  equipped with low-cost RGB-D sensors, such as Microsoft Kinect
+                  and Intel Realsense, for safe navigation and active interaction
+                  with objects and people. In order to obtain more accurate
+                  and reliable fused color and depth information (coloured point
+                  clouds), not only the intrinsic and extrinsic parameters of color
+                  and depth sensor should be precisely calibrated, but also the
+                  external corrections of depth measurements are required. In
+                  this paper, using motion capture system, we propose a reliable
+                  calibration framework that enables the precise estimation of the
+                  intrinsic and extrinsic parameters of RGB-D sensors and provide
+                  a model-free depth calibration method based on heteroscedastic
+                  Gaussian Processes. Compared with the existing depth correction
+                  techniques, our method can simultaneously estimate the mean
+                  and variance of the depth error at different measurement
+                  distances, i.e., the probability distribution of the depth error
+                  relative to the measured distance, which is essential in the state
+                  estimation problems. To verify the effectiveness of our approach,
+                  we conduct a thorough qualitative and quantitative analysis of
+                  the major steps of our calibration method, and compare our
+                  experimental results with other related work. Furthermore, we
+                  demonstrate an experiment about the overall improvement of
+                  visual SLAM with a Kinect device calibrated by our calibration
+                  technique.
+                  <br>
+                  <b>Keywords:</b> RGB-D cameras, calibration, motion capture system
+                </div> 
+            </div>
+          </p>
+        </li>
+        <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+        <li>
+          <p>
+            <div class="linebigheight" align="left" id="ref1">
+              <a href="pdf/一种分布式多机器人的导航方法.pdf"  class="fontnorm bluelink">一种分布式多机器人的导航方法</a>[P]
+              <br>
+              <a class="pub-authors"><b>陈广大</b>, 姚舜一, 吉建民.</a>
+              <br>
+              <a href="https://d.wanfangdata.com.cn/patent/ChJQYXRlbnROZXdTMjAyMTAxMDkSEENOMjAyMDExMTI1NDIwLjQaCHVvbG1yN215"  class="bluelink pub-venue">中国专利</a>：CN112304314A, 2021-02-02.
+            </div>
+          </p>
+        </li>
+      </ol>
+      <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+        <p>
         <b>*</b> These authors contributed equally to the work.
-        <br>
-        <br>
-      </div>
+        </p>
     </div>
     <hr color=#987cb9 SIZE=1 />
   </div>
@@ -691,7 +702,7 @@
   <div id="service">
     <div class="width25 leftfloat" align="left" id="service_title">
       <br>
-      <a class="fontbig">Other</a>
+      <a class="fontbig blacklink">Other</a>
     </div>
     <div class="width75 leftfloat linebigheight" align="left" id="service_content">
       <p>
@@ -736,7 +747,7 @@
   </div> 
   <div class="maxwidth" align="center" id="cpright">
     <p><a>&copy; </a>
-    <a href="https://cgdsss.github.io" class="bluelink">Guangda Chen</a> 2019-2020. 
+    <a href="https://cgdsss.github.io/" class="bluelink">Guangda Chen</a> 2019-2021. 
     <a onclick="document.all.disclaimers.style.display=(document.all.disclaimers.style.display =='none')?'':'none'" class="bluelink">Click to read the disclaimer</a></p>
   </div>
 </div>

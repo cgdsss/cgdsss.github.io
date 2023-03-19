@@ -68,6 +68,9 @@ z-index: 2;
 text-decoration: none;color: #527bbd;
 border-bottom: 1px gray dotted;
 }
+.bb{
+  border-bottom: 1px gray dotted;
+}
 .fontverybig{
  font-size: 2em;
 }

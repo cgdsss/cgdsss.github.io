@@ -64,6 +64,10 @@ a:hover {
 border-bottom: 1px gray dotted;
 }
 
+.bb{
+  border-bottom: 1px gray dotted;
+}
+
 #layout-menu a.current:link, #layout-menu a.current:visited {
 color: #022b6d;
 border-bottom: 1px gray solid;

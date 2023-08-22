@@ -68,6 +68,14 @@ z-index: 2;
 text-decoration: none;color: #527bbd;
 border-bottom: 1px gray dotted;
 }
+.bb{
+  border-bottom: 1px gray dotted;
+  /* background-color: rgba(0, 255, 0, 0.3); */
+  background-color: hsl(120, 25%, 86%);
+  border-radius: 5px;
+  padding-right:2px;
+  padding-left:2px;
+};
 .fontverybig{
  font-size: 2em;
 }
@@ -86,8 +94,12 @@ border-bottom: 1px gray dotted;
 .fontverysmall{
   font-size: 0.9em;
  }
-.award{
-  color:#CCCC00
+ .award{
+  color:#3d3d09;
+  background-color: rgba(162, 228, 39, 0.7);
+  border-radius: 5px;
+  padding-right:2px;
+  padding-left:2px;
 }
 #icon{
    background:none;
